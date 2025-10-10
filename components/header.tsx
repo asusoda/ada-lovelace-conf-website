@@ -12,13 +12,13 @@ export function Header() {
 
   return (
     <header className="font-lejour">
-      <div className="fixed top-0 left-0 w-full h-[9%] bg-[var(--color-light-purple)] items-center flex justify-between px-10">
-        <div className="font-lejour flex space-x-[25%] hidden md:flex ">
+      <div className="fixed top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%] 2xl:px-[11%]">
+        <div className="font-lejour flex space-x-[25%] xl:space-x-[30%]  2xl:space-x-[40%] hidden md:flex ">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className="text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl transition-colors"
+              className="text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl 2xl:text-[3.5rem] transition-colors"
             >
               {item.name}
             </Link>

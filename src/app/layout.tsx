@@ -6,6 +6,8 @@ import { Suspense } from "react"
 import { Header } from "../../components/header"
 import { HeroSection } from "@/components/hero"
 import { AboutSection } from "@/components/about"
+import { AgendaSection } from "@/components/agenda"
+import { Footer } from "@/components/footer"
 
 const leJourSerif = localFont({
   src: "../../public/fonts/le-jour-serif.otf",
@@ -40,11 +42,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${leJourSerif.variable} ${poppinsSansSerif.variable} ${luciditySansSerif.variable}`}>
         <Header />
-        <Suspense fallback={<div>Loading...</div>}>
-        <HeroSection />
-        <AboutSection />
+        <main>
+          <Suspense fallback={<div>Loading...</div>}>
+            <HeroSection />
+            <AboutSection />
+            <AgendaSection />
+            <Footer />
         
-        </Suspense>
+          </Suspense>
+        </main>
+
       </body>
     </html>
   )
