@@ -51,7 +51,7 @@ export function HeroSection() {
             <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:pl-[49%] 2xl:mt-[3%]">
               <Button 
                 size="lg" 
-                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-white/90 font-semibold px-9 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full"
+                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold px-9 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full"
               >
                 REGISTER NOW
               </Button>
@@ -59,7 +59,7 @@ export function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="font-lucidity border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-md rounded-full bg-transparent"
+                className="font-lucidity border-2 border-white text-blue-600 hover:bg-white hover:text-blue-400 font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-md rounded-full bg-transparent"
               >
                 LEARN MORE
                 <ArrowDown className="ml-2 h-5 w-5" />
