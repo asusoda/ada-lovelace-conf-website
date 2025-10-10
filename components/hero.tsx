@@ -38,7 +38,7 @@ export function HeroSection() {
             <div className="space-y-10 mt-[10%] lg:ml-10 flex justify-center">
               <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
                   text-[3.5rem] sm:text-xl md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[10rem] 2xl:tracking-wider 2xl:ml-[10%]">
-                <span className="xl:ml-[3%] 2xl:ml-[7%]">ADA<br /></span>
+                <span className="xl:ml-[7%] 2xl:ml-[7%]">ADA<br /></span>
                 <span className = "2xl:ml-[4%]">LOVELACE<br /></span>
                 <span className="xl:ml-[3%] 2xl:ml-[4%] whitespace-nowrap">
                   <span className="font-lejour">SUMMIT</span>
