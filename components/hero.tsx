@@ -38,7 +38,7 @@ export function HeroSection() {
             <div className="space-y-10 mt-[10%] lg:ml-10 flex justify-center">
               <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
                   text-[3.5rem] sm:text-xl md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[10rem] 2xl:tracking-wider 2xl:ml-[10%]">
-                <span className="xl:ml-[3%] 2xl:ml-[7%]">ADA<br /></span>
+                <span className="xl:ml-[7%] 2xl:ml-[7%]">ADA<br /></span>
                 <span className = "2xl:ml-[4%]">LOVELACE<br /></span>
                 <span className="xl:ml-[3%] 2xl:ml-[4%] whitespace-nowrap">
                   <span className="font-lejour">SUMMIT</span>
@@ -51,7 +51,7 @@ export function HeroSection() {
             <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:pl-[49%] 2xl:mt-[3%]">
               <Button 
                 size="lg" 
-                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-white/90 font-semibold px-9 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full"
+                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold px-9 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full"
               >
                 REGISTER NOW
               </Button>
@@ -59,7 +59,7 @@ export function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="font-lucidity border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-md rounded-full bg-transparent"
+                className="font-lucidity border-2 border-white text-blue-600 hover:bg-white hover:text-blue-400 font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-md rounded-full bg-transparent"
               >
                 LEARN MORE
                 <ArrowDown className="ml-2 h-5 w-5" />

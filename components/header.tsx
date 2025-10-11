@@ -10,14 +10,33 @@ export function Header() {
     { name: "Speakers", href: "/speakers" },
   ]
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Map route paths to section IDs
+    const sectionMap: { [key: string]: string } = {
+      "/about": "#about",
+      "/agenda": "#agenda",
+      "/speakers": "#speakers"
+    }
+
+    const sectionId = sectionMap[href]
+    if (sectionId) {
+      const element = document.querySelector(sectionId)
+      if (element) {
+        e.preventDefault()
+        element.scrollIntoView({ behavior: "smooth", block: "start" })
+      }
+    }
+  }
+
   return (
     <header className="font-lejour">
-      <div className="fixed top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%] 2xl:px-[11%]">
+      <div className="absolute top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%] 2xl:px-[11%] z-50">
         <div className="font-lejour flex space-x-[25%] xl:space-x-[30%]  2xl:space-x-[40%] hidden md:flex ">
           {navigation.map((item) => (
             <Link
               key={item.name}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className="text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl 2xl:text-[3.5rem] transition-colors"
             >
               {item.name}

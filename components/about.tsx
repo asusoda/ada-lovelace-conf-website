@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function AboutSection() {
   return (
-    <section className="min-h-screen bg-[var(--color-blue)] py-20 lg:py-32">
+    <section id="about" className="min-h-screen bg-[var(--color-blue)] py-20 lg:py-32">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left side - Title and Description */}
