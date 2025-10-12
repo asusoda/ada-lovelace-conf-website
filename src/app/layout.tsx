@@ -7,6 +7,7 @@ import { Header } from "../../components/header"
 import { HeroSection } from "@/components/hero"
 import { AboutSection } from "@/components/about"
 import { AgendaSection } from "@/components/agenda"
+import { CTASection } from "@/components/cta"
 import { Footer } from "@/components/footer"
 
 const leJourSerif = localFont({
@@ -47,6 +48,7 @@ export default function RootLayout({
             <HeroSection />
             <AboutSection />
             <AgendaSection />
+            <CTASection />
             <Footer />
         
           </Suspense>
