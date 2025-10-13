@@ -50,7 +50,7 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:mt-[3%]">
               <Button 
-                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-white/90 font-semibold px-40 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
+                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold px-40 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
               >
                 REGISTER NOW
               </Button>
@@ -67,13 +67,7 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* Small device illustration */}
-            <div className="pt-8">
-              {/* PLACEHOLDER: Insert your small device/phone illustration SVG here */}
-              <div className="w-24 h-32 bg-white/10 rounded-lg flex items-center justify-center text-white/30 text-xs">
-                Device SVG
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
