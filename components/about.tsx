@@ -4,53 +4,52 @@ export function AboutSection() {
   return (
     <section id="about" className="min-h-screen bg-[var(--color-blue)] py-20 lg:py-32">
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="">
           {/* Left side - Title and Description */}
           <div className="space-y-8">
-            <h2 className="font-lejour text-5xl lg:text-6xl xl:text-7xl font-bold text-primary leading-tight">
-              WHAT IS<br />
-              THE ADA<br />
-              LOVELACE<br />
-              SUMMIT?
-            </h2>
-
-            <div className="space-y-6 text-foreground/80 text-lg leading-relaxed">
-              <p>
-                Join us this fall semester for the Ada Lovelace Summit, 
-                hosted by the University of Wisconsin-Madison Women in 
-                the Software Developers Association (SODA) in 
-                collaboration with Diversity and Inclusion in Computer Science 
-                (DICS) and We in Computer Science.
-              </p>
-
-              <p>
-                This event brings together women and underrepresented people in tech to network, 
-                discover new career pathways, and build meaningful industry connections.
-              </p>
-
-              <p>
-                Whether you're seeking your options in open-source, startups, or Fortune 500s, this event offers 
-                great networking opportunities as you explore diverse career pathways and build 
-                meaningful connections with industry leaders.
-              </p>
+            <div className="flex gap-15">
+              <h2 className="border font-lejour text-5xl lg:text-7xl xl:text-8xl font-bold text-[var(--color-light-purple)] leading-tight tracking-wider">
+                WHAT IS<br />
+                THE ADA<br />
+                LOVELACE<br />
+                SUMMIT?
+              </h2>
+              <div className="border space-y-6 text-[var(--color-light-purple)] text-poppins text-2xl leading-relaxed tracking-wider">
+                <p>
+                  Join us this fall semester for the Ada Lovelace Summit,
+                  hosted by the University of Wisconsin-Madison Women in
+                  the Software Developers Association (SODA) in
+                  collaboration with Diversity and Inclusion in Computer Science
+                  (DICS) and We in Computer Science.
+                </p>
+                <p>
+                  This event brings together women and underrepresented people in tech to network,
+                  discover new career pathways, and build meaningful industry connections.
+                </p>
+                <p>
+                  Whether you're seeking your options in open-source, startups, or Fortune 500s, this event offers
+                  great networking opportunities as you explore diverse career pathways and build
+                  meaningful connections with industry leaders.
+                </p>
+              </div>
             </div>
 
-            <div className="space-y-4 pt-4">
-              <h3 className="font-display text-2xl font-semibold text-primary">
+            <div className="space-y-4 pt-4 text-[var(--color-light-purple)] tracking-wider">
+              <h3 className="font-poppins text-2xl font-semibold">
                 What to Expect:
               </h3>
-              <ul className="space-y-3 text-foreground/80">
+              <ul className="text-2xl space-y-3">
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span><strong className="text-primary">Expert Panel Discussions</strong> from dynamic, industry professionals in tech</span>
+                  <span className="font-bold mt-1">•</span>
+                  <span><strong className="">Expert Panel Discussions</strong> from dynamic, industry professionals in tech</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span><strong className="text-primary">Hands-On Workshops</strong> to build new skills and explore new technologies</span>
+                  <span className="font-bold mt-1">•</span>
+                  <span><strong className="">Hands-On Workshops</strong> to build new skills and explore new technologies</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <span className="text-primary font-bold mt-1">•</span>
-                  <span><strong className="text-primary">Networking Opportunities</strong> to connect directly with top employers</span>
+                  <span className=" font-bold mt-1">•</span>
+                  <span><strong className="">Networking Opportunities</strong> to connect directly with top employers</span>
                 </li>
               </ul>
             </div>

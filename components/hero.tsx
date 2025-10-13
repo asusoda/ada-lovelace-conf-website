@@ -12,7 +12,7 @@ export function HeroSection() {
             <img
               src="/ada-lovelace.svg"
               alt="Ada Lovelace Portrait"
-              className="absolute h-screen w-auto xl:-left-38 2xl:-left-18 xl:top-8 max-w-none object-contain h-pointer-events-none"
+              className="absolute h-screen w-auto xl:-left-38 2xl:-left-50 xl:top-8 max-w-none object-contain h-pointer-events-none"
             />
 
             {/* invisible placeholder to preserve flow */}
@@ -35,7 +35,7 @@ export function HeroSection() {
             </div>
 
             {/* Title */}
-            <div className="space-y-10 mt-[10%] lg:ml-10 flex justify-center">
+            <div className="space-y-10 mt-[10%] lg:ml-10 2xl:ml-[9%] flex justify-center">
               <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
                   text-[3.5rem] sm:text-xl md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[10rem] 2xl:tracking-wider 2xl:ml-[10%]">
                 <span className="xl:ml-[7%] 2xl:ml-[7%]">ADA<br /></span>
@@ -48,10 +48,9 @@ export function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:pl-[49%] 2xl:mt-[3%]">
+            <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:mt-[3%]">
               <Button 
-                size="lg" 
-                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold px-9 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full"
+                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-white/90 font-semibold px-40 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
               >
                 REGISTER NOW
               </Button>
@@ -59,10 +58,12 @@ export function HeroSection() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="font-lucidity border-2 border-white text-blue-600 hover:bg-white hover:text-blue-400 font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-md rounded-full bg-transparent"
+                className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-xl rounded-full bg-transparent w-full 2xl:ml-[18%]"
               >
                 LEARN MORE
-                <ArrowDown className="ml-2 h-5 w-5" />
+                <div className="animate-bounce text-[var(--color-blue)]">
+                <ArrowDown size={5}/>
+                </div>
               </Button>
             </div>
 
@@ -78,9 +79,7 @@ export function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ArrowDown className="h-6 w-6 text-white/70" />
-      </div>
+
     </section>
   );
 }
