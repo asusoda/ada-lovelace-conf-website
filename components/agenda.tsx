@@ -11,7 +11,7 @@ export function AgendaSection() {
 
   return (
     <section id="agenda" className="min-h-screen bg-[var(--color-white)] py-6 sm:py-8 xl:py-12 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
-      <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto">
+      <div className="max-w-6xl 2xl:max-w-[1600px] mx-auto">
 
         {/* Date + location Header */}
         <div className="font-lejour text-left mb-4 sm:mb-6 xl:mb-8 text-[var(--color-blue)]">
@@ -31,7 +31,7 @@ export function AgendaSection() {
 
           <div className="relative">
             {/* Info box - top right */}
-            <div className="absolute -top-12 sm:-top-16 xl:-top-20 2xl:-top-24 right-0 bg-purple-300/50 p-2 sm:p-3 xl:p-4 2xl:p-5 rounded-lg max-w-[140px] sm:max-w-xs z-10">
+            <div className="absolute -top-12 sm:-top-16 xl:-top-20 2xl:-top-24 right-0 bg-[var(--color-light-purple)] p-2 sm:p-3 xl:p-4 2xl:p-5 rounded-lg max-w-[140px] sm:max-w-xs z-10">
               <p className="text-blue-600 text-[10px] sm:text-xs xl:text-sm 2xl:text-base font-medium uppercase leading-tight">
                 MORE SPEAKER
                 <br />
@@ -41,21 +41,31 @@ export function AgendaSection() {
               </p>
             </div>
 
-            <div className="bg-purple-200/60 rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-8 2xl:p-10 backdrop-blur-sm">
-              <div className="space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
-                {scheduleItems.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 xl:gap-6 py-1 sm:py-2"
-                  >
-                    <span className="text-base sm:text-lg xl:text-xl 2xl:text-2xl font-bold text-blue-600 sm:min-w-[100px] xl:min-w-[120px] 2xl:min-w-[140px] font-mono">
+            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-20 2xl:p-10 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
+              <div className="flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-20">
+                {/* Left column - Times */}
+                <div className="flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
+                  {scheduleItems.map((item, index) => (
+                    <span
+                      key={index}
+                      className="text-base sm:text-lg xl:text-xl 2xl:text-2xl font-bold  py-1 sm:py-2"
+                    >
                       {item.time}
                     </span>
-                    <span className="text-sm sm:text-base xl:text-lg 2xl:text-xl font-medium text-blue-600 uppercase tracking-wide">
+                  ))}
+                </div>
+
+                {/* Right column - Titles */}
+                <div className="flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5 flex-1">
+                  {scheduleItems.map((item, index) => (
+                    <span
+                      key={index}
+                      className="text-sm sm:text-base xl:text-lg 2xl:text-xl font-medium uppercase tracking-wide py-1 sm:py-2"
+                    >
                       {item.title}
                     </span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
