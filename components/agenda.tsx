@@ -7,78 +7,95 @@ export function AgendaSection() {
     { time: "1:00 PM", title: "PANEL Q & A" },
     { time: "2:00 PM", title: "CLOSING NOTES" },
     { time: "2:15 PM", title: "CAREER FAIR" },
-  ];
+  ]
 
   return (
-    <section id="agenda" className="min-h-screen bg-white py-20 lg:py-32">
-      <div className="container mx-auto px-6 lg:px-12">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <p className="text-sm uppercase tracking-wider text-muted-foreground mb-4">
-            Saturday, October 18th<br />
-            Memorial Union, UW-Madison - 7:00
+    <section id="agenda" className="min-h-screen bg-[var(--color-white)] py-6 sm:py-8 xl:py-12 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
+      <div className="max-w-7xl 2xl:max-w-[1600px] mx-auto">
+
+        {/* Date + location Header */}
+        <div className="font-lejour text-left mb-4 sm:mb-6 xl:mb-8 text-[var(--color-blue)]">
+          <p className=" text-xs sm:text-sm xl:text-base 2xl:text-lg font-medium tracking-wider uppercase">
+            SATURDAY, OCTOBER 18TH
+          </p>
+          <p className="text-xs sm:text-sm xl:text-base 2xl:text-lg font-medium tracking-wider uppercase">
+            MEMORIAL UNION, TURBOHOUSE - 7:00
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-          {/* Left side - Schedule */}
-          <div className="space-y-6">
-            <h2 className="font-display text-5xl lg:text-6xl xl:text-7xl font-bold text-primary mb-12">
-              AGENDA
-            </h2>
+        <div className="relative">
+          {/* Large AGENDA title */}
+          <h1 className="font-lejour text-5xl sm:text-6xl xl:text-8xl 2xl:text-9xl font-bold text-[var(--color-blue)] mb-6 sm:mb-8 xl:mb-12 2xl:mb-16 tracking-tight text-center xl:text-right">
+            AGENDA
+          </h1>
 
-            <div className="space-y-1">
-              {scheduleItems.map((item, index) => (
-                <div 
-                  key={index}
-                  className="flex items-baseline gap-8 py-4 border-b border-border/50 hover:bg-secondary/30 transition-colors px-4 -mx-4 rounded-lg group"
-                >
-                  <span className="text-2xl font-bold font-display text-primary min-w-[140px] group-hover:text-primary/80 transition-colors">
-                    {item.time}
-                  </span>
-                  <span className="text-lg font-medium text-foreground/80 uppercase tracking-wide">
-                    {item.title}
-                  </span>
-                </div>
-              ))}
+          <div className="relative">
+            {/* Info box - top right */}
+            <div className="absolute -top-12 sm:-top-16 xl:-top-20 2xl:-top-24 right-0 bg-purple-300/50 p-2 sm:p-3 xl:p-4 2xl:p-5 rounded-lg max-w-[140px] sm:max-w-xs z-10">
+              <p className="text-blue-600 text-[10px] sm:text-xs xl:text-sm 2xl:text-base font-medium uppercase leading-tight">
+                MORE SPEAKER
+                <br />
+                INFORMATION
+                <br />
+                COMING
+              </p>
             </div>
 
-            {/* Additional info */}
-            <div className="pt-8 space-y-4">
-              <div className="p-6 bg-secondary rounded-xl">
-                <p className="text-sm text-foreground/70 leading-relaxed">
-                  <span className="font-semibold text-primary">Lunch will be provided</span> during 
-                  the free time session. Dietary restrictions and preferences will be accommodated.
-                </p>
-              </div>
-              
-              <div className="p-6 bg-primary/5 rounded-xl border border-primary/20">
-                <p className="text-sm text-foreground/70 leading-relaxed">
-                  <span className="font-semibold text-primary">Career Fair participants:</span> Representatives 
-                  from leading tech companies will be available for networking and recruitment opportunities.
-                </p>
+            <div className="bg-purple-200/60 rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-8 2xl:p-10 backdrop-blur-sm">
+              <div className="space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
+                {scheduleItems.map((item, index) => (
+                  <div
+                    key={index}
+                    className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 xl:gap-6 py-1 sm:py-2"
+                  >
+                    <span className="text-base sm:text-lg xl:text-xl 2xl:text-2xl font-bold text-blue-600 sm:min-w-[100px] xl:min-w-[120px] 2xl:min-w-[140px] font-mono">
+                      {item.time}
+                    </span>
+                    <span className="text-sm sm:text-base xl:text-lg 2xl:text-xl font-medium text-blue-600 uppercase tracking-wide">
+                      {item.title}
+                    </span>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
 
-          {/* Right side - Illustration */}
-          <div className="relative lg:sticky lg:top-32">
-            <div className="aspect-[4/5] bg-primary/10 rounded-2xl overflow-hidden relative">
-              {/* PLACEHOLDER: Insert illustration of person with books/laptop SVG here */}
-              <div className="w-full h-full flex items-center justify-center text-primary/30 text-center p-8">
-                <p>Ada Lovelace with Books/Laptop<br/>Illustration SVG</p>
-              </div>
-              
-              {/* Decorative element */}
-              <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-primary/20 to-transparent"></div>
+          {/* Illustration placeholders */}
+          <div className="relative mt-8 hidden xl:block">
+            {/* Left figure - person sitting/reclining */}
+            <div className="absolute bottom-0 left-0 w-48 xl:w-64 2xl:w-80 h-60 xl:h-80 2xl:h-96 bg-blue-600 rounded-lg opacity-90 flex items-center justify-center">
+              <p className="text-white text-center text-xs xl:text-sm 2xl:text-base px-4">
+                SVG Placeholder:
+                <br />
+                Person Sitting/Reclining
+              </p>
             </div>
 
-            {/* Floating accent */}
-            <div className="absolute -top-8 -right-8 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-8 -left-8 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
+            {/* Right figure - person standing with books */}
+            <div className="absolute bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] bg-blue-600 rounded-lg opacity-90 flex items-center justify-center">
+              <p className="text-white text-center text-xs xl:text-sm 2xl:text-base px-4">
+                SVG Placeholder:
+                <br />
+                Person Standing
+                <br />
+                with Stack of Books
+              </p>
+            </div>
+
+            {/* Stack of books placeholder (separate element) */}
+            <div className="absolute bottom-0 right-16 xl:right-20 2xl:right-24 w-24 xl:w-32 2xl:w-40 h-48 xl:h-64 2xl:h-80 bg-blue-600 rounded-lg opacity-80 flex items-center justify-center">
+              <p className="text-white text-center text-[10px] xl:text-xs 2xl:text-sm px-2">
+                Books
+                <br />
+                Stack
+              </p>
+            </div>
           </div>
+
+          {/* Spacer for absolute positioned elements */}
+          <div className="hidden xl:block h-80 xl:h-96 2xl:h-[28rem]"></div>
         </div>
       </div>
     </section>
-  );
+  )
 }

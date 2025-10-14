@@ -1,11 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import AdaLovelace from "@/public/ada-lovelace.svg";
 
 export function HeroSection() {
   return (
-    <section className="bg-[var(--color-white)] flex items-center justify-center overflow-visible mb-[3%] 2xl:mb-[1.8%]">
-      <div className="container mx-auto">
+    <section className="bg-[var(--color-white)] flex items-center justify-center mb-[3%] 2xl:mb-[1.8%]">
+      <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[calc(100vh-80px)] pt-[3%]">
           {/* Left side - Portrait illustration */}
           <div className="w-full lg:w-1/2 hidden lg:block">

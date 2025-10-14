@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function AboutSection() {
   return (
-    <section id="about" className="md:max-h-[calc(100vh+18.47rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-20 lg:py-32 overflow-hidden">
+    <section id="about" className="md:max-h-[calc(100vh+17rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}
