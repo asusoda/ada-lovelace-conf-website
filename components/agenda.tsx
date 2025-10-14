@@ -10,7 +10,7 @@ export function AgendaSection() {
   ];
 
   return (
-    <section className="min-h-screen bg-white py-20 lg:py-32">
+    <section id="agenda" className="min-h-screen bg-white py-20 lg:py-32">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">

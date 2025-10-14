@@ -36,6 +36,7 @@ export function Header() {
             <Link
               key={item.name}
               href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
               className="text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl 2xl:text-[3.2rem] transition-colors"
             >
               {item.name}
