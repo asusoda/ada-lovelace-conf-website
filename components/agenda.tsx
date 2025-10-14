@@ -10,45 +10,41 @@ export function AgendaSection() {
   ]
 
   return (
-    <section id="agenda" className="min-h-screen bg-[var(--color-white)] py-6 sm:py-8 xl:py-12 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
+    <section id="agenda" className="min-h-screen bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
       <div className="max-w-6xl 2xl:max-w-[1600px] mx-auto">
-
-        {/* Date + location Header */}
-        <div className="font-lejour text-left mb-4 sm:mb-6 xl:mb-8 text-[var(--color-blue)]">
-          <p className=" text-xs sm:text-sm xl:text-base 2xl:text-lg font-medium tracking-wider uppercase">
-            SATURDAY, OCTOBER 18TH
-          </p>
-          <p className="text-xs sm:text-sm xl:text-base 2xl:text-lg font-medium tracking-wider uppercase">
-            MEMORIAL UNION, TURBOHOUSE - 7:00
-          </p>
-        </div>
-
         <div className="relative">
-          {/* Large AGENDA title */}
-          <h1 className="font-lejour text-5xl sm:text-6xl xl:text-8xl 2xl:text-9xl font-bold text-[var(--color-blue)] mb-6 sm:mb-8 xl:mb-12 2xl:mb-16 tracking-tight text-center xl:text-right">
-            AGENDA
-          </h1>
+          {/* Date + location Header */}
+          <div className="flex justify-between mb-6">
+            <div className="font-lejour text-left text-[var(--color-blue)] mt-auto mb-2">
+              <p className=" text-xs sm:text-sm xl:text-lg 2xl:text-lg font-medium tracking-wider uppercase">
+                SATURDAY, OCTOBER 18TH
+              </p>
+              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-lg font-medium tracking-wider uppercase">
+                MEMORIAL UNION - TURQUOISE ROOM 220
+              </p>
+            </div>
+            {/* Large AGENDA title */}
+            <h1 className="font-lejour text-5xl sm:text-6xl xl:text-8xl 2xl:text-9xl font-bold text-[var(--color-blue)] tracking-tight xl:text-right ">
+              AGENDA
+            </h1>
+          </div>
 
           <div className="relative">
             {/* Info box - top right */}
-            <div className="absolute -top-12 sm:-top-16 xl:-top-20 2xl:-top-24 right-0 bg-[var(--color-light-purple)] p-2 sm:p-3 xl:p-4 2xl:p-5 rounded-lg max-w-[140px] sm:max-w-xs z-10">
+            <div className="absolute top-0 bg-[var(--color-light-purple)] p-2 sm:p-3 xl:p-4 2xl:p-5 rounded-lg max-w-[140px] sm:max-w-xs">
               <p className="text-blue-600 text-[10px] sm:text-xs xl:text-sm 2xl:text-base font-medium uppercase leading-tight">
-                MORE SPEAKER
-                <br />
-                INFORMATION
-                <br />
-                COMING
+                *MORE SPEAKER INFORMATION COMING
               </p>
             </div>
 
-            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-20 2xl:p-10 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
-              <div className="flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-20">
+            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
+              <div className="flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-10 pb-70">
                 {/* Left column - Times */}
                 <div className="flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
                   {scheduleItems.map((item, index) => (
                     <span
                       key={index}
-                      className="text-base sm:text-lg xl:text-xl 2xl:text-2xl font-bold  py-1 sm:py-2"
+                      className="text-base sm:text-lg xl:text-xl 2xl:text-2xl font-bold py-1 sm:py-2"
                     >
                       {item.time}
                     </span>
@@ -71,34 +67,29 @@ export function AgendaSection() {
           </div>
 
           {/* Illustration placeholders */}
-          <div className="relative mt-8 hidden xl:block">
+          <div className="relative mt-8 hidden lg:block">
             {/* Left figure - person sitting/reclining */}
-            <div className="absolute bottom-0 left-0 w-48 xl:w-64 2xl:w-80 h-60 xl:h-80 2xl:h-96 bg-blue-600 rounded-lg opacity-90 flex items-center justify-center">
-              <p className="text-white text-center text-xs xl:text-sm 2xl:text-base px-4">
-                SVG Placeholder:
-                <br />
-                Person Sitting/Reclining
-              </p>
+            <div className="absolute bottom-70 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
+                {/* susan kare */}
+                <div className="w-full">
+                  <img
+                    src="/susan-kare.svg"
+                    alt="Susan Kare Portrait"
+                    className="hidden md:block md:relative right-50 -bottom-50 2xl:bottom-25 w-250 2xl:w-205 object-contain max-w-none h-pointer-events-none"
+                  />
+                </div>
             </div>
 
             {/* Right figure - person standing with books */}
-            <div className="absolute bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] bg-blue-600 rounded-lg opacity-90 flex items-center justify-center">
-              <p className="text-white text-center text-xs xl:text-sm 2xl:text-base px-4">
-                SVG Placeholder:
-                <br />
-                Person Standing
-                <br />
-                with Stack of Books
-              </p>
-            </div>
-
-            {/* Stack of books placeholder (separate element) */}
-            <div className="absolute bottom-0 right-16 xl:right-20 2xl:right-24 w-24 xl:w-32 2xl:w-40 h-48 xl:h-64 2xl:h-80 bg-blue-600 rounded-lg opacity-80 flex items-center justify-center">
-              <p className="text-white text-center text-[10px] xl:text-xs 2xl:text-sm px-2">
-                Books
-                <br />
-                Stack
-              </p>
+            <div className="absolute bottom-80 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
+                {/* margarent ham*/}
+                <div className="w-full">
+                  <img
+                    src="/margaret-ham.svg"
+                    alt="Margaret Ham Portrait"
+                    className="hidden md:block md:relative right-200 -bottom-100 2xl:bottom-21 w-430 2xl:w-205 object-contain max-w-none h-pointer-events-none"
+                  />
+                </div>
             </div>
           </div>
 
