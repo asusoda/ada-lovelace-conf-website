@@ -10,35 +10,29 @@ export function AgendaSection() {
   ]
 
   return (
-    <section id="agenda" className="max-h-[calc(100vh+10rem)] bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
-      <div className="max-w-6xl 2xl:max-w-[1600px] mx-auto">
+    <section id="agenda" className="max-h-[calc(100vh+10rem)] 2xl:max-h-[calc(100vh+8rem)] bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
+      <div className="max-w-6xl 2xl:max-w-[70%] mx-auto">
         <div className="relative">
           {/* Date + location Header */}
-          <div className="flex justify-between mb-6">
+          <div className="flex justify-between mb-6 2xl:mb-10 2xl:pt-10">
             <div className="font-lejour text-left text-[var(--color-blue)] mt-auto mb-2">
-              <p className=" text-xs sm:text-sm xl:text-lg 2xl:text-lg font-medium tracking-wider uppercase">
+              <p className=" text-xs sm:text-sm xl:text-lg 2xl:text-2xl font-medium tracking-wider uppercase">
                 SATURDAY, OCTOBER 18TH
               </p>
-              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-lg font-medium tracking-wider uppercase">
+              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-2xl font-medium tracking-wider uppercase">
                 MEMORIAL UNION - TURQUOISE ROOM 220
               </p>
             </div>
             {/* Large AGENDA title */}
-            <h1 className="font-lejour text-5xl sm:text-6xl xl:text-8xl 2xl:text-9xl font-bold text-[var(--color-blue)] tracking-tight xl:text-right ">
+            <h1 className="font-lejour text-5xl sm:text-6xl xl:text-8xl 2xl:text-8xl font-bold text-[var(--color-blue)] tracking-wider xl:text-right ">
               AGENDA
             </h1>
           </div>
 
           <div className="relative">
-            {/* Info box - top right */}
-            <div className="absolute top-0 bg-[var(--color-light-purple)] p-2 sm:p-3 xl:p-4 2xl:p-5 rounded-lg max-w-[140px] sm:max-w-xs">
-              <p className="text-blue-600 text-[10px] sm:text-xs xl:text-sm 2xl:text-base font-medium uppercase leading-tight">
-                *MORE SPEAKER INFORMATION COMING
-              </p>
-            </div>
 
             <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
-              <div className="flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-10 pb-70">
+              <div className="flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-10 pb-70 2xl:pb-120">
                 {/* Left column - Times */}
                 <div className="flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
                   {scheduleItems.map((item, index) => (
@@ -56,7 +50,7 @@ export function AgendaSection() {
                   {scheduleItems.map((item, index) => (
                     <span
                       key={index}
-                      className="text-sm sm:text-base xl:text-lg 2xl:text-xl font-medium uppercase tracking-wide py-1 sm:py-2"
+                      className="text-base sm:text-lg xl:text-xl 2xl:text-2xl font-bold py-1 sm:py-2"
                     >
                       {item.title}
                     </span>
@@ -69,25 +63,25 @@ export function AgendaSection() {
           {/* Illustration placeholders */}
           <div className="relative mt-8 hidden lg:block">
             {/* Left figure - person sitting/reclining */}
-            <div className="absolute bottom-70 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
+            <div className="absolute bottom-70 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
                 {/* susan kare */}
                 <div className="w-full">
                   <img
                     src="/susan-kare.svg"
                     alt="Susan Kare Portrait"
-                    className="hidden md:block md:relative right-50 -bottom-50 2xl:bottom-25 w-250 2xl:w-205 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative right-50 2xl:right-90 -bottom-60 2xl:bottom-30 w-250 2xl:w-350 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
             </div>
 
             {/* Right figure - person standing with books */}
-            <div className="absolute bottom-80 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
+            <div className="absolute bottom-80 2xl:bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
                 {/* margarent ham*/}
                 <div className="w-full">
                   <img
                     src="/margaret-ham.svg"
                     alt="Margaret Ham Portrait"
-                    className="hidden md:block md:relative right-200 -bottom-100 2xl:bottom-21 w-430 2xl:w-205 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative right-200 2xl:right-210 -bottom-110 2xl:-bottom-10 w-430 2xl:w-500 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
             </div>

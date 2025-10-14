@@ -29,7 +29,7 @@ export function Header() {
   return (
     <header className="font-lejour">
       <div className="absolute top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
-        <div className="font-lejour flex space-x-[25%] xl:space-x-[30%]  2xl:space-x-[40%] hidden md:flex ">
+        <div className="font-lejour flex space-x-[25%] xl:space-x-[70%]  2xl:space-x-[13rem] hidden md:flex ">
           {navigation.map((item) => (
             <Link
               key={item.name}
