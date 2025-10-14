@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 
 export function AboutSection() {
   return (
-    <section id="about" className="max-h-[calc(100vh+18.47rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-20 lg:py-32 overflow-hidden">
+    <section id="about" className="md:max-h-[calc(100vh+18.47rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}
           <div className="space-y-8">
-            <div className="flex gap-15">
+            <div className="flex flex-col gap-8 md:gap-15 md:flex-row">
               <h2 className="font-lejour text-5xl lg:text-7xl xl:text-8xl font-bold text-[var(--color-light-purple)] leading-tight tracking-wider">
                 WHAT IS<br />
                 THE ADA<br />
@@ -28,13 +28,13 @@ export function AboutSection() {
             </div>
 
             <div className="flex">
-              <div className="flex-2 min-w-40 overflow-visible">
+              <div className="flex-0 md:flex-2 md:min-w-40 overflow-visible">
                 {/* annie easley */}
                 <div className="w-full">
                   <img
                     src="/annie-easley.svg"
                     alt="Annie Easley Portrait"
-                    className="relative -left-80 2xl:-left-100 w-150 2xl:w-175 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative -left-80 2xl:-left-100 w-150 2xl:w-175 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
@@ -57,23 +57,23 @@ export function AboutSection() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-2 min-w-80 overflow-visible">
+              <div className="flex-0 md:flex-2 md:min-w-80 overflow-visible">
                 {/* hedy lamarr */}
                 <div className="w-full">
                   <img
                     src="/hedy-lamarr.svg"
                     alt="Hedy Lamarr Portrait"
-                    className="relative w-150 2xl:w-175 right-30 2xl:right-50 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative w-150 2xl:w-175 right-30 2xl:right-50 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
-              <div className="flex-1 min-w-60 overflow-visible">
+              <div className="flex-0 md:flex-1 md:min-w-60 overflow-visible">
                 {/* grace hopper */}
                 <div className="w-full">
                   <img
                     src="/grace-hopper.svg"
                     alt="Grace Hopper Portrait"
-                    className="relative right-40 bottom-19 2xl:bottom-21 w-175 2xl:w-205 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative right-40 bottom-19 2xl:bottom-21 w-175 2xl:w-205 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
