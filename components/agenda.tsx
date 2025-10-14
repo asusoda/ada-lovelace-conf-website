@@ -10,7 +10,7 @@ export function AgendaSection() {
   ]
 
   return (
-    <section id="agenda" className="min-h-screen bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
+    <section id="agenda" className="max-h-[calc(100vh+10rem)] bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
       <div className="max-w-6xl 2xl:max-w-[1600px] mx-auto">
         <div className="relative">
           {/* Date + location Header */}
