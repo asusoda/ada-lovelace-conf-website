@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export function AboutSection() {
   return (
-    <section id="about" className="max-h-[calc(100vh+18.47rem)] bg-[var(--color-blue)] py-20 lg:py-32">
+    <section id="about" className="max-h-[calc(100vh+18.47rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-20 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}
@@ -14,7 +14,7 @@ export function AboutSection() {
                 LOVELACE<br />
                 SUMMIT?
               </h2>
-              <div className="space-y-6 text-[var(--color-light-purple)] text-poppins xl:text-[1.4rem] 2xl:text-2xl leading-relaxed tracking-wider">
+              <div className="space-y-6 text-[var(--color-light-purple)] text-poppins xl:text-[1.4rem] 2xl:text-3xl leading-relaxed tracking-wider">
                 <p>
                   Join us this fall semester for the Ada Lovelace Summit, a Women in Tech Conference hosted by the Software Developers Association (SODA) in collaboration with Women in Computer Science (WICS).
                 </p>
@@ -34,12 +34,12 @@ export function AboutSection() {
                   <img
                     src="/annie-easley.svg"
                     alt="Annie Easley Portrait"
-                    className="absolute -left-40 w-150 object-contain max-w-none h-pointer-events-none"
+                    className="relative -left-80 2xl:-left-100 w-150 2xl:w-175 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
-              <div className="space-y-4 pt-4 text-[var(--color-light-purple)] tracking-wider xl:text-[1.4rem] 2xl:text-2xl">
-                <h3 className="font-poppins xl:text-[1.4rem] 2xl:text-2xl font-semibold">
+              <div className="space-y-4 pt-4 text-[var(--color-light-purple)] tracking-wider xl:text-[1.4rem]  2xl:text-3xl leading-relaxed tracking-wider">
+                <h3 className="font-poppins font-semibold">
                   What to Expect:
                 </h3>
                 <ul className="space-y-3">
@@ -63,7 +63,7 @@ export function AboutSection() {
                   <img
                     src="/hedy-lamarr.svg"
                     alt="Hedy Lamarr Portrait"
-                    className="absolute left-150 w-150 object-contain max-w-none h-pointer-events-none"
+                    className="relative w-150 2xl:w-175 right-30 2xl:right-50 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
@@ -73,7 +73,7 @@ export function AboutSection() {
                   <img
                     src="/grace-hopper.svg"
                     alt="Grace Hopper Portrait"
-                    className="relative right-40 bottom-19 w-175 object-contain max-w-none h-pointer-events-none"
+                    className="relative right-40 bottom-19 2xl:bottom-21 w-175 2xl:w-205 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>

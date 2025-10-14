@@ -18,11 +18,7 @@ export function HeroSection() {
             {/* invisible placeholder to preserve flow */}
             <div className="w-full h-[500px] lg:h-[700px]" />
           </div>
-
           
-
-                      {/* w-[clamp(320px,70vw,1500px)]  */}
-
           {/* Right side - Content */}
           <div className="flex-1 w-full text-[var(--color-blue)] space-y-5 2xl:pt-[3%] xl:pt-[1%] h-full lg:pr-5 px-10">
             {/* Event details */}
@@ -35,12 +31,12 @@ export function HeroSection() {
             </div>
 
             {/* Title */}
-            <div className="space-y-10 mt-[10%] lg:ml-10 2xl:ml-[9%] flex justify-center">
+            <div className="space-y-10 mt-[10%] lg:ml-10 2xl:ml-[13%] flex justify-center">
               <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
                   text-[3.5rem] sm:text-xl md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[10rem] 2xl:tracking-wider 2xl:ml-[10%]">
-                <span className="xl:ml-[7%] 2xl:ml-[7%]">ADA<br /></span>
-                <span className = "2xl:ml-[4%]">LOVELACE<br /></span>
-                <span className="xl:ml-[3%] 2xl:ml-[4%] whitespace-nowrap">
+                <span className="xl:ml-[7%] 2xl:ml-[11%]">ADA<br /></span>
+                <span className = "2xl:ml-[7%]">LOVELACE<br /></span>
+                <span className="xl:ml-[3%] 2xl:ml-[7%] whitespace-nowrap">
                   <span className="font-lejour">SUMMIT</span>
                   <span className="opacity-50 font-lejour">2025</span>
                 </span>
