@@ -1,7 +1,16 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
 
 export function HeroSection() {
+  const handleLearnMoreClick = () => {
+    const aboutSection = document.querySelector("#about")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   return (
     <section className="bg-[var(--color-white)] flex items-center justify-center mb-[3%] 2xl:mb-[1.8%]">
       <div className="container mx-auto px-6">
@@ -45,14 +54,18 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:mt-[3%]">
               <Button 
+                asChild
                 className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold px-40 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
               >
-                REGISTER NOW
+                <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
+                  REGISTER NOW
+                </a>
               </Button>
               
               <Button 
                 size="lg" 
                 variant="outline"
+                onClick={handleLearnMoreClick}
                 className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-xl rounded-full bg-transparent w-full 2xl:ml-[18%]"
               >
                 LEARN MORE

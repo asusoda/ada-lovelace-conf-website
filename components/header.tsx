@@ -7,7 +7,6 @@ export function Header() {
   const navigation = [
     { name: "About", href: "/about" },
     { name: "Agenda", href: "/agenda" },
-    { name: "Speakers", href: "/speakers" },
   ]
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -15,7 +14,6 @@ export function Header() {
     const sectionMap: { [key: string]: string } = {
       "/about": "#about",
       "/agenda": "#agenda",
-      "/speakers": "#speakers"
     }
 
     const sectionId = sectionMap[href]
@@ -44,7 +42,7 @@ export function Header() {
           ))}
         </div>
         <Link href="/" className="text-xl text-[var(--color-blue)]">
-          Club Name
+          SoDA & WICS
         </Link>
       </div>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
