@@ -31,7 +31,7 @@ export function HeroSection() {
           <div className=" flex-1 w-full text-[var(--color-blue)] space-y-5 2xl:pt-[3%] xl:pt-[1%] h-full lg:pr-5 px-10">
             {/* Event details */}
             <div className="lg:px-0 flex w-full gap-5 lg:gap-10 2xl:gap-20 justify-center lg:justify-between text-xs xl:text-sm 2xl:text-lg font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
-              <div className="flex-2 border "></div>
+              <div className="flex-2"></div>
               <span className="text-left">October 18</span>
               <span className="hidden lg:block">•</span>
               <span>3-5PM</span>

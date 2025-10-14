@@ -41,8 +41,17 @@ export function Header() {
             </Link>
           ))}
         </div>
-        <Link href="/" className="text-xl text-[var(--color-blue)]">
-          SoDA & WICS
+        <Link href="/" className="flex">
+          <img
+            src="/soda-logo-blue.svg"
+            alt="SODA Logo"
+            className="w-40"
+            />
+          <img
+            src="/wics-logo-blue.svg"
+            alt="WICS Logo"
+            className="w-40"
+            />
         </Link>
       </div>
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
