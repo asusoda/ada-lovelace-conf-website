@@ -28,17 +28,20 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="text-sm flex flex-col space-y-2">
               <Link href="https://discord.gg/QYhj56GU" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
-                Discord
+                SoDA Discord
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white">
-                Instagram
+              <Link href="https://www.instagram.com/soda.asu/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                SoDA Instagram
+              </Link>
+              <Link href="https://www.instagram.com/wics.asu/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white">
+                WICS Instagram
               </Link>
             </div>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-          <p>&copy; 2025 SoDA & WICS. All rights reserved.</p>
+          <p>&copy; 2025 Software Developers Association at ASU. All rights reserved.</p>
         </div>
       </div>
     </footer>
