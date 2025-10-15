@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-3 gap-8 justify-items-center">
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-poppins">SoDA & WICS</h3>
+            <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA & WiCS</h3>
             <p className="text-sm">
 
             </p>
@@ -16,10 +16,10 @@ export function Footer() {
             <h4 className="font-semibold font-poppins mb-4">Quick Links</h4>
             <div className="text-sm flex flex-col space-y-2">
               <Link href="https://thesoda.io/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-light-purple)] hover:text-[var(--color-white)]">
-                About SoDA
+                About ./SoDA
               </Link>
               <Link href="https://asuwics.org/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-light-purple)] hover:text-[var(--color-white)]">
-                About WICS
+                About WiCS
               </Link>    
             </div>
           </div>
@@ -28,13 +28,13 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="text-sm flex flex-col space-y-2">
               <Link href="https://discord.gg/QYhj56GU" target="_blank" rel="noopener noreferrer" className="text-[var(--color-light-purple)] hover:text-[var(--color-white)]">
-                SoDA Discord
+                ./SoDA Discord
               </Link>
               <Link href="https://www.instagram.com/soda.asu/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-light-purple)] hover:text-[var(--color-white)]">
-                SoDA Instagram
+                ./SoDA Instagram
               </Link>
               <Link href="https://www.instagram.com/wics.asu/" target="_blank" rel="noopener noreferrer" className="text-[var(--color-light-purple)] hover:text-[var(--color-white)]">
-                WICS Instagram
+                WiCS Instagram
               </Link>
             </div>
           </div>

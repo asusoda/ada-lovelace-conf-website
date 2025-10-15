@@ -42,14 +42,14 @@ export function Header() {
         <Link href="/" className="flex">
           <Image
             src="/soda-logo-blue.svg"
-            alt="SODA Logo"
+            alt="./SoDA Logo"
             width={160}
             height={160}
             className="w-20 lg:w-40"
             />
           <Image
             src="/wics-logo-blue.svg"
-            alt="WICS Logo"
+            alt="WiCS Logo"
             width={160}
             height={160}
             className="w-20 lg:w-40"
