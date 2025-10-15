@@ -12,7 +12,7 @@ export function HeroSection() {
   }
 
   return (
-    <section className="bg-[var(--color-white)] flex items-center justify-center mb-[7%] lg:mb-[3%] 2xl:mb-[1.8%]">
+    <section className="bg-[var(--color-white)] flex items-center justify-center mb-[7%] lg:mb-[3%] 2xl:mb-[1.8%] overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-80px)] pt-[3%]">
           {/* Left side - Portrait illustration */}
@@ -53,7 +53,7 @@ export function HeroSection() {
             </div>
 
 
-              <div className="flex">
+              <div className="flex lg:px-10 ">
                 {/* mobile layout ada lovelace svg */}
                 <div className="min-w-20 lg:hidden">
                   <img
@@ -68,7 +68,7 @@ export function HeroSection() {
                 <Button
                   size="lg"
                   asChild
-                  className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-40 lg:py-10 2xl:py-15 text-[0.5rem] lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
+                  className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-40 lg:py-10 2xl:py-15 text-[0.5rem] lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-[80%] 2xl:ml-[18%]"
                 >
                   <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
                     REGISTER NOW
@@ -79,7 +79,7 @@ export function HeroSection() {
                   size="lg"
                   variant="outline"
                   onClick={handleLearnMoreClick}
-                  className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 text-[0.5rem] lg:text-xl rounded-full bg-transparent w-full 2xl:ml-[18%]"
+                  className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 text-[0.5rem] lg:text-xl rounded-full bg-transparent w-[80%] 2xl:ml-[18%]"
                 >
                   LEARN MORE
                   <div className="animate-bounce text-[var(--color-blue)]">
