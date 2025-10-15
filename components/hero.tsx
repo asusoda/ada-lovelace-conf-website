@@ -12,9 +12,9 @@ export function HeroSection() {
   }
 
   return (
-    <section className="bg-[var(--color-white)] flex items-center justify-center mb-[3%] 2xl:mb-[1.8%]">
+    <section className="bg-[var(--color-white)] flex items-center justify-center mb-[7%] lg:mb-[3%] 2xl:mb-[1.8%]">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[calc(100vh-80px)] pt-[3%]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-80px)] pt-[3%]">
           {/* Left side - Portrait illustration */}
           <div className="w-full lg:w-1/2 hidden lg:block">
             <img
@@ -30,8 +30,8 @@ export function HeroSection() {
           {/* Right side - Content */}
           <div className=" flex-1 w-full text-[var(--color-blue)] space-y-5 2xl:pt-[3%] xl:pt-[1%] h-full lg:pr-5 px-10">
             {/* Event details */}
-            <div className="lg:px-0 flex w-full gap-5 lg:gap-10 2xl:gap-20 justify-center lg:justify-between text-xs xl:text-sm 2xl:text-lg font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
-              <div className="flex-2"></div>
+            <div className="lg:px-0 flex w-full gap-5 lg:gap-10 2xl:gap-20 justify-center lg:justify-between text-[0.5rem] xl:text-sm 2xl:text-lg font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
+              <div className="flex-0 lg:flex-2 -mr-5 lg:-mr-0"></div>
               <span className="text-left">October 18</span>
               <span className="hidden lg:block">•</span>
               <span>3-5PM</span>
@@ -42,7 +42,7 @@ export function HeroSection() {
             {/* Title */}
             <div className="space-y-10 mt-[10%] lg:ml-10 2xl:ml-[13%] flex justify-center">
               <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
-                  text-[3.5rem] sm:text-xl md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[9rem] 2xl:tracking-wider 2xl:ml-[10%]">
+                  text-[3rem] sm:text-lg md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[9rem] 2xl:tracking-wider 2xl:ml-[10%]">
                 <span className="xl:ml-[7%] 2xl:ml-[10%]">ADA<br /></span>
                 <span className = "2xl:ml-[6%]">LOVELACE<br /></span>
                 <span className="xl:ml-[3%] 2xl:ml-[6%] whitespace-nowrap">
@@ -52,29 +52,42 @@ export function HeroSection() {
               </h1>
             </div>
 
-            {/* CTA Buttons */}
-            <div className="flex flex-col gap-4 pt-4 justify-center px-10 lg:pl-[40%] 2xl:mt-[3%]">
-              <Button 
-                asChild
-                className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold px-40 sm:py-6 lg:py-10 2xl:py-15 sm:text-xs lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
-              >
-                <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
-                  REGISTER NOW
-                </a>
-              </Button>
-              
-              <Button 
-                size="lg" 
-                variant="outline"
-                onClick={handleLearnMoreClick}
-                className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold px-9 py-6 2xl:py-10 sm:text-xs lg:text-xl rounded-full bg-transparent w-full 2xl:ml-[18%]"
-              >
-                LEARN MORE
-                <div className="animate-bounce text-[var(--color-blue)]">
-                <ArrowDown size={5}/>
+
+              <div className="flex">
+                {/* mobile layout ada lovelace svg */}
+                <div className="min-w-20 lg:hidden">
+                  <img
+                    src="/ada-lovelace.svg"
+                    alt="Ada Lovelace Portrait"
+                    className="absolute w-55 -left-10 bottom-60 object-contain h-pointer-events-none"
+                  />
                 </div>
-              </Button>
-            </div>
+                
+                            {/* CTA Buttons */}
+               <div className="flex flex-col gap-4 pt-4 justify-center px-2 lg:px-10 lg:pl-[40%] 2xl:mt-[3%]">
+                <Button
+                  size="lg"
+                  asChild
+                  className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-40 lg:py-10 2xl:py-15 text-[0.5rem] lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-full 2xl:ml-[18%]"
+                >
+                  <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
+                    REGISTER NOW
+                  </a>
+                </Button>
+                
+                <Button
+                  size="lg"
+                  variant="outline"
+                  onClick={handleLearnMoreClick}
+                  className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 text-[0.5rem] lg:text-xl rounded-full bg-transparent w-full 2xl:ml-[18%]"
+                >
+                  LEARN MORE
+                  <div className="animate-bounce text-[var(--color-blue)]">
+                  <ArrowDown size={5}/>
+                  </div>
+                </Button>
+                            </div>
+              </div>
 
 
           </div>

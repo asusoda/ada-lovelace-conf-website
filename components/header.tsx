@@ -45,12 +45,12 @@ export function Header() {
           <img
             src="/soda-logo-blue.svg"
             alt="SODA Logo"
-            className="w-40"
+            className="w-20 lg:w-40"
             />
           <img
             src="/wics-logo-blue.svg"
             alt="WICS Logo"
-            className="w-40"
+            className="w-20 lg:w-40"
             />
         </Link>
       </div>
