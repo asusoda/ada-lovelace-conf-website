@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     <header className="font-lejour">
-      <div className="absolute top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
+  <div className="absolute top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
         <div className="font-lejour flex space-x-[25%] xl:space-x-[70%]  2xl:space-x-[13rem] hidden md:flex ">
           {navigation.map((item) => (
             <Link
@@ -44,14 +44,14 @@ export function Header() {
         <Link href="/" className="flex">
           <Image
             src="/soda-logo-blue.svg"
-            alt="SODA Logo"
+            alt="./SoDA Logo"
             width={160}
             height={160}
             className="w-20 lg:w-40"
             />
           <Image
             src="/wics-logo-blue.svg"
-            alt="WICS Logo"
+            alt="WiCS Logo"
             width={160}
             height={160}
             className="w-20 lg:w-40"
