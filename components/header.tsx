@@ -28,8 +28,7 @@ export function Header() {
 
   return (
     <header className="font-lejour">
-      <div className="absolute top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
-        <div className="font-lejour flex space-x-[25%] xl:space-x-[70%]  2xl:space-x-[13rem] hidden md:flex ">
+      <div style={{alignContent: "center", justifyContent: "space-between"}} className="top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -40,7 +39,6 @@ export function Header() {
               {item.name}
             </Link>
           ))}
-        </div>
         <Link href="/" className="flex">
           <Image
             src="/soda-logo-blue.svg"
@@ -58,12 +56,6 @@ export function Header() {
             />
         </Link>
       </div>
-      <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center"></div>
-        </div>
-      </nav>
-
     </header>
   )
 }
