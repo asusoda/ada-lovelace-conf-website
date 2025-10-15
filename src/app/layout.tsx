@@ -8,6 +8,7 @@ import { HeroSection } from "@/components/hero"
 import { AboutSection } from "@/components/about"
 import { AgendaSection } from "@/components/agenda"
 import { Footer } from "@/components/footer"
+import { BackToTop } from "@/components/back-to-top"
 
 const leJourSerif = localFont({
   src: "../../public/fonts/le-jour-serif.otf",
@@ -50,6 +51,7 @@ export default function RootLayout({
         
           </Suspense>
         </main>
+        <BackToTop />
 
       </body>
     </html>
