@@ -32,7 +32,7 @@ export function BackToTop() {
       tabIndex={isVisible ? 0 : -1}
       aria-hidden={!isVisible}
       className={cn(
-        "fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--color-blue)] to-[var(--color-light-purple)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-xl transition-all duration-300",
+        "fixed bottom-6 right-6 z-30 flex items-center gap-2 rounded-full bg-gradient-to-r from-[var(--color-blue)] to-[var(--color-light-purple)] px-6 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-xl transition-all duration-300 cursor-pointer",
         "hover:scale-105 hover:shadow-2xl",
         isVisible
           ? "opacity-100 translate-y-0 pointer-events-auto"

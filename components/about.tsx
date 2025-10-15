@@ -56,7 +56,7 @@ export function AboutSection() {
                   </li>
                   <li className="flex items-start gap-3">
                     <span className=" font-bold mt-1">•</span>
-                    <span><strong className="">Networking Opportunities</strong> to connect directly with top employers</span>
+                    <span><strong className="">Networking Opportunities</strong> to connect directly with top professionals and researchers</span>
                   </li>
                 </ul>
               </div>

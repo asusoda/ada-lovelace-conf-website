@@ -8,7 +8,6 @@ export function AgendaSection() {
     { time: "11:00 AM", title: "LUNCH / FREE TIME" },
     { time: "1:00 PM", title: "PANEL Q & A" },
     { time: "2:00 PM", title: "CLOSING NOTES" },
-    { time: "2:15 PM", title: "CAREER FAIR" },
   ]
 
   return (
@@ -18,10 +17,10 @@ export function AgendaSection() {
           {/* Date + location Header */}
           <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between mb-6 2xl:mb-10 pt-5 2xl:pt-10">
             <div className="hidden lg:block font-lejour text-left text-[var(--color-blue)] mt-auto mb-2">
-              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-2xl font-medium tracking-wider uppercase">
+              <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-bold tracking-wider uppercase">
                 SATURDAY, OCTOBER 18TH
               </p>
-              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-2xl font-medium tracking-wider uppercase">
+              <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-medium tracking-wider uppercase">
                 MEMORIAL UNION - TURQUOISE ROOM 220
               </p>
             </div>
@@ -32,10 +31,10 @@ export function AgendaSection() {
 
             {/* mobile view date and time */}
             <div className="lg:hidden font-lejour text-left text-[var(--color-blue)] mt-auto mb-0 lg:mb-2">
-              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-2xl font-medium tracking-wider uppercase">
+              <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-medium tracking-wider uppercase">
                 SATURDAY, OCTOBER 18TH
               </p>
-              <p className="text-xs sm:text-sm xl:text-lg 2xl:text-2xl font-medium tracking-wider uppercase">
+              <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-medium tracking-wider uppercase">
                 MEMORIAL UNION - TURQUOISE ROOM 220
               </p>
             </div>

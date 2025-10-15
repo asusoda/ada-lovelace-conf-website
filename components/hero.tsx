@@ -84,7 +84,7 @@ export function HeroSection() {
                   size="lg"
                   variant="outline"
                   onClick={handleLearnMoreClick}
-                  className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 text-[0.5rem] lg:text-xl rounded-full bg-transparent w-[80%] 2xl:ml-[18%]"
+                  className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 text-[0.5rem] lg:text-xl rounded-full bg-transparent w-[80%] 2xl:ml-[18%] cursor-pointer"
                 >
                   LEARN MORE
                   <div className="animate-bounce text-[var(--color-blue)]">
