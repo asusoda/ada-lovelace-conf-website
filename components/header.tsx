@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 
 export function Header() {
   const navigation = [
@@ -41,14 +42,18 @@ export function Header() {
           ))}
         </div>
         <Link href="/" className="flex">
-          <img
+          <Image
             src="/soda-logo-blue.svg"
             alt="SODA Logo"
+            width={160}
+            height={160}
             className="w-20 lg:w-40"
             />
-          <img
+          <Image
             src="/wics-logo-blue.svg"
             alt="WICS Logo"
+            width={160}
+            height={160}
             className="w-20 lg:w-40"
             />
         </Link>

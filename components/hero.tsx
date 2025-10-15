@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
   const handleLearnMoreClick = () => {
@@ -17,9 +18,11 @@ export function HeroSection() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-80px)] pt-[3%]">
           {/* Left side - Portrait illustration */}
           <div className="w-full lg:w-1/2 hidden lg:block">
-            <img
+            <Image
               src="/ada-lovelace.svg"
               alt="Ada Lovelace Portrait"
+              width={900}
+              height={900}
               className="absolute h-screen w-auto xl:-left-38 2xl:-left-50 xl:top-8 max-w-none object-contain h-pointer-events-none"
             />
 
@@ -56,9 +59,11 @@ export function HeroSection() {
               <div className="flex lg:px-10 ">
                 {/* mobile layout ada lovelace svg */}
                 <div className="min-w-20 lg:hidden">
-                  <img
+                  <Image
                     src="/ada-lovelace.svg"
                     alt="Ada Lovelace Portrait"
+                    width={400}
+                    height={400}
                     className="absolute w-55 -left-10 bottom-60 object-contain h-pointer-events-none"
                   />
                 </div>

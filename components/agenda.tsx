@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export function AgendaSection() {
   const scheduleItems = [
     { time: "9:00 AM", title: "KICKOFF & SPEECHES" },
@@ -94,9 +96,11 @@ export function AgendaSection() {
             <div className="absolute bottom-70 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
                 {/* susan kare */}
                 <div className="w-full">
-                  <img
+                  <Image
                     src="/susan-kare.svg"
                     alt="Susan Kare Portrait"
+                    width={400}
+                    height={400}
                     className="hidden md:block md:relative right-50 2xl:right-90 -bottom-60 2xl:bottom-30 w-250 2xl:w-350 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
@@ -106,9 +110,11 @@ export function AgendaSection() {
             <div className="absolute bottom-80 2xl:bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
                 {/* margarent ham*/}
                 <div className="w-full">
-                  <img
+                  <Image
                     src="/margaret-ham.svg"
                     alt="Margaret Ham Portrait"
+                    width={450}
+                    height={450}
                     className="hidden md:block md:relative right-200 2xl:right-210 -bottom-110 2xl:-bottom-10 w-430 2xl:w-500 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>

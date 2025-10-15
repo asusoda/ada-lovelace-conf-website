@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss"
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+const config: Config = {
   content: ["./src/**/*.{html,js,ts,jsx,tsx}"], // adjust to your file paths
   theme: {
     extend: {
@@ -17,3 +16,4 @@ module.exports = {
   plugins: [],
 }
 
+export default config

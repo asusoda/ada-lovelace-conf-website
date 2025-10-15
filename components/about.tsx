@@ -1,4 +1,6 @@
 
+import Image from "next/image"
+
 export function AboutSection() {
   return (
     <section id="about" className="md:max-h-[calc(100vh+17rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden">
@@ -21,7 +23,7 @@ export function AboutSection() {
                 This event brings together women and underrepresented groups in tech to network, discover new career pathways, and build meaningful connections with industry leaders. 
                 </p>
                 <p>
-                Whether you're exploring your options or ready to launch your career, this summit is designed for you!
+                Whether you&apos;re exploring your options or ready to launch your career, this summit is designed for you!
                 </p>
               </div>
             </div>
@@ -30,9 +32,11 @@ export function AboutSection() {
               <div className="flex-0 md:flex-2 md:min-w-40 overflow-visible">
                 {/* annie easley */}
                 <div className="w-full">
-                  <img
+                  <Image
                     src="/annie-easley.svg"
                     alt="Annie Easley Portrait"
+                    width={500}
+                    height={500}
                     className="hidden md:block md:relative -left-80 2xl:-left-100 w-150 2xl:w-175 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
@@ -59,9 +63,11 @@ export function AboutSection() {
               <div className="flex-0 md:flex-2 md:min-w-80 overflow-visible">
                 {/* hedy lamarr */}
                 <div className="w-full">
-                  <img
+                  <Image
                     src="/hedy-lamarr.svg"
                     alt="Hedy Lamarr Portrait"
+                    width={500}
+                    height={500}
                     className="hidden md:block md:relative w-150 2xl:w-175 right-30 2xl:right-50 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
@@ -69,9 +75,11 @@ export function AboutSection() {
               <div className="flex-0 md:flex-1 md:min-w-60 overflow-visible">
                 {/* grace hopper */}
                 <div className="w-full">
-                  <img
+                  <Image
                     src="/grace-hopper.svg"
                     alt="Grace Hopper Portrait"
+                    width={550}
+                    height={550}
                     className="hidden md:block md:relative right-40 bottom-19 2xl:bottom-21 w-175 2xl:w-205 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
