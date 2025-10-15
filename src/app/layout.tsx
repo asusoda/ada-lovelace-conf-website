@@ -28,8 +28,8 @@ const poppinsSansSerif = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "WTC 2025",
+  description: "Ada Lovelace Conference 2025, a Women in Tech Conference",
   generator: "v0.app",
 }
 
