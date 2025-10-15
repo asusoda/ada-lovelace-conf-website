@@ -17,7 +17,7 @@ export function HeroSection() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-80px)] pt-[3%]">
           {/* Left side - Portrait illustration */}
-          <div className="w-full lg:w-1/2 hidden lg:block">
+          <div style={{pointerEvents: "none"}} className="w-full lg:w-1/2 hidden lg:block">
             <Image
               src="/ada-lovelace.svg"
               alt="Ada Lovelace Portrait"
