@@ -3,13 +3,13 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="md:max-h-[calc(100vh+17rem)] 2xl:max-h-[calc(100vh+5.7rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden">
+    <section id="about" className="md:h-[calc(100vh+17rem)] 2xl:h-[calc(100vh+23rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}
           <div className="space-y-8">
             <div className="flex flex-col gap-8 md:gap-15 md:flex-row">
-              <h2 className="font-lejour text-5xl lg:text-7xl xl:text-8xl font-bold text-[var(--color-light-purple)] leading-tight tracking-wider">
+              <h2 className="font-lejour text-[clamp(3rem,6vw+1rem,8rem)] font-bold text-[var(--color-light-purple)] leading-tight tracking-wider">
                 WHAT IS<br />
                 THE ADA<br />
                 LOVELACE<br />

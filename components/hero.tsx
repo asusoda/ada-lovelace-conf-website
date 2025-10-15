@@ -33,7 +33,7 @@ export function HeroSection() {
           {/* Right side - Content */}
           <div className=" flex-1 w-full text-[var(--color-blue)] space-y-5 2xl:pt-[3%] xl:pt-[1%] h-full lg:pr-5 px-10">
             {/* Event details */}
-            <div className="lg:px-0 flex w-full gap-5 lg:gap-10 2xl:gap-20 justify-center lg:justify-between text-[0.5rem] xl:text-sm 2xl:text-lg font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
+            <div className="text-[0.5rem] lg:text-[clamp(1rem,0.7vw+0.25rem,3rem)] g:px-0 flex w-full gap-5 lg:gap-10 2xl:gap-20 justify-center lg:justify-between font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
               <div className="flex-0 lg:flex-2 -mr-5 lg:-mr-0"></div>
               <span className="text-left">October 18</span>
               <span className="hidden lg:block">•</span>
@@ -42,10 +42,12 @@ export function HeroSection() {
               <span className="text-right lg:left-left">Memorial Union</span>
             </div>
 
+            {/*  text-[0.5rem] xl:text-sm 2xl:text-lg  */}
+
             {/* Title */}
             <div className="space-y-10 mt-[10%] lg:ml-10 2xl:ml-[13%] flex justify-center">
               <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
-                  text-[3rem] sm:text-lg md:text-6xl lg:text-7xl xl:text-[7.5rem] 2xl:text-[9rem] 2xl:tracking-wider 2xl:ml-[10%]">
+                  text-[clamp(3rem,6vw+1rem,8rem)] 2xl:tracking-wider 2xl:ml-[10%]">
                 <span className="xl:ml-[7%] 2xl:ml-[10%]">ADA<br /></span>
                 <span className = "2xl:ml-[6%]">LOVELACE<br /></span>
                 <span className="xl:ml-[3%] 2xl:ml-[6%] whitespace-nowrap">
@@ -55,6 +57,7 @@ export function HeroSection() {
               </h1>
             </div>
 
+            { /* sm:text-lg md:text-6xl lg:text-7xl xl:text-[7rem] */}
 
               <div className="flex lg:px-10 ">
                 {/* mobile layout ada lovelace svg */}
@@ -73,18 +76,20 @@ export function HeroSection() {
                 <Button
                   size="lg"
                   asChild
-                  className="text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-40 lg:py-10 2xl:py-15 text-[0.5rem] lg:text-md lg:text-2xl 2xl:text-3xl rounded-full w-[80%] 2xl:ml-[18%]"
+                  className="text-[clamp(0.7rem,1.5vw,3rem)] text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-40 lg:py-10 2xl:py-15 rounded-full w-[80%] 2xl:ml-[18%]"
                 >
                   <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
                     REGISTER NOW
                   </a>
                 </Button>
+
+                {/* text-[0.5rem] lg:text-md lg:text-2xl 2xl:text-3xl */}
                 
                 <Button
                   size="lg"
                   variant="outline"
                   onClick={handleLearnMoreClick}
-                  className="font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 text-[0.5rem] lg:text-xl rounded-full bg-transparent w-[80%] 2xl:ml-[18%] cursor-pointer"
+                  className="text-[clamp(0.7rem,1.5vw,3rem)] font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 rounded-full bg-transparent w-[80%] 2xl:ml-[18%] cursor-pointer"
                 >
                   LEARN MORE
                   <div className="animate-bounce text-[var(--color-blue)]">

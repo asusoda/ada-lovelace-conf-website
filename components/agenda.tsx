@@ -16,16 +16,16 @@ export function AgendaSection() {
         <div className="relative">
           {/* Date + location Header */}
           <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between mb-6 2xl:mb-10 pt-5 2xl:pt-10">
-            <div className="hidden lg:block font-lejour text-left text-[var(--color-blue)] mt-auto mb-2">
-              <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-bold tracking-wider uppercase">
+            <div className="hidden lg:block font-lejour text-left text-[var(--color-blue)] mt-auto mb-2 text-sm lg:text-[clamp(1rem,1.3vw+0.25rem,5rem)]">
+              <p className="font-bold tracking-wider uppercase">
                 SATURDAY, OCTOBER 18TH
               </p>
-              <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-medium tracking-wider uppercase">
+              <p className="font-medium tracking-wider uppercase">
                 MEMORIAL UNION - TURQUOISE ROOM 220
               </p>
             </div>
             {/* Large AGENDA title */}
-            <h1 className="font-lejour text-5xl sm:text-6xl xl:text-8xl 2xl:text-8xl font-bold text-[var(--color-blue)] tracking-wider xl:text-right ">
+            <h1 className="font-lejour text-[clamp(3rem,6vw+1rem,8rem)] font-bold text-[var(--color-blue)] tracking-wider xl:text-right mb-none pb-none">
               AGENDA
             </h1>
 
@@ -44,13 +44,13 @@ export function AgendaSection() {
           <div className="relative">
 
             <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
-              <div className="hidden lg:block lg:flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-5 lg:px-10 pb-10 lg:pb-70 2xl:pb-120">
+              <div className="text-[clamp(1rem,1vw+0.25rem,2rem)] hidden lg:block lg:flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-5 lg:px-10 pb-10 lg:pb-70 2xl:pb-120">
                 {/* Left column - Times */}
                 <div className="flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
                   {scheduleItems.map((item, index) => (
                     <span
                       key={index}
-                      className="text-[0.5rem] sm:text-lg xl:text-xl 2xl:text-2xl font-bold py-1 sm:py-2"
+                      className="font-bold py-1 sm:py-2"
                     >
                       {item.time}
                     </span>
@@ -62,7 +62,7 @@ export function AgendaSection() {
                   {scheduleItems.map((item, index) => (
                     <span
                       key={index}
-                      className="sm:text-lg xl:text-xl 2xl:text-2xl font-bold py-1 sm:py-2"
+                      className="font-bold py-1 sm:py-2"
                     >
                       {item.title}
                     </span>
