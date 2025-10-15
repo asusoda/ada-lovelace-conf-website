@@ -29,16 +29,18 @@ export function Header() {
   return (
     <header className="font-lejour">
       <div style={{alignContent: "center", justifyContent: "space-between"}} className="top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              onClick={(e) => handleNavClick(e, item.href)}
-              className="text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl 2xl:text-[3.2rem] transition-colors"
-            >
-              {item.name}
-            </Link>
-          ))}
+          <div className="flex flex-3 w-[80%] gap-[30%]">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="hidden md:block text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl 2xl:text-[3.2rem] transition-colors"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
         <Link href="/" className="flex">
           <Image
             src="/soda-logo-blue.svg"

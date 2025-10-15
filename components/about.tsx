@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="md:h-[calc(100vh+17rem)] 2xl:h-[calc(100vh+23rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden">
+    <section id="about" className="md:h-[calc(100vh+17rem)] 2xl:h-[calc(100vh+20rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}

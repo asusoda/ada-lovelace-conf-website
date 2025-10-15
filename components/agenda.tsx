@@ -25,7 +25,7 @@ export function AgendaSection() {
               </p>
             </div>
             {/* Large AGENDA title */}
-            <h1 className="font-lejour text-[clamp(3rem,6vw+1rem,8rem)] font-bold text-[var(--color-blue)] tracking-wider xl:text-right mb-none pb-none">
+            <h1 className="font-lejour text-[clamp(3rem,6vw+1rem,8rem)] font-bold text-[var(--color-blue)] tracking-wider xl:text-right mb-none pb-none leading-none">
               AGENDA
             </h1>
 
