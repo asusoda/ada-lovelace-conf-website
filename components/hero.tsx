@@ -48,7 +48,7 @@ export function HeroSection() {
               <div className="flex-0 lg:flex-2 -mr-5 xl:-mr-0"></div>
               <span className="text-left">October 18</span>
               <span className="hidden lg:block">•</span>
-              <span>3-5PM</span>
+              <span>9AM-5PM</span>
               <span className="hidden lg:block">•</span>
               <span className="text-right lg:left-left">Memorial Union</span>
             </div>
