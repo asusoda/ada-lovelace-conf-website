@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="md:h-[calc(100vh+17rem)] 2xl:h-[calc(100vh+20rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden">
+    <section id="about" className="md:h-[calc(100vh+17rem)] lg:h-[calc(100vh+10rem)] xl:h-[calc(100vh+18rem)] 2xl:h-[calc(100vw-34rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden relative z-50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}
@@ -29,7 +29,7 @@ export function AboutSection() {
             </div>
 
             <div className="flex">
-              <div className="flex-0 md:flex-2 md:min-w-40 overflow-visible">
+              <div className="flex-0 md:flex-2 md:min-w-20 lg:min-w-20 xl:min-w-40 2xl:min-w-60 overflow-visible">
                 {/* annie easley */}
                 <div className="w-full">
                   <Image
@@ -37,7 +37,7 @@ export function AboutSection() {
                     alt="Annie Easley Portrait"
                     width={500}
                     height={500}
-                    className="hidden md:block md:relative -left-80 2xl:-left-100 w-150 2xl:w-175 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative -left-80 2xl:-left-80 lg:w-130 xl:w-160 2xl:w-190 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
@@ -60,7 +60,7 @@ export function AboutSection() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-0 md:flex-2 md:min-w-80 overflow-visible">
+              <div className="flex-0 md:flex-2 md:min-w-80 lg:min-w-60 xl:min-w-80 overflow-visible">
                 {/* hedy lamarr */}
                 <div className="w-full">
                   <Image
@@ -68,7 +68,7 @@ export function AboutSection() {
                     alt="Hedy Lamarr Portrait"
                     width={500}
                     height={500}
-                    className="hidden md:block md:relative w-150 2xl:w-175 right-30 2xl:right-50 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative lg:w-130 xl:w-150 2xl:w-175 right-30 2xl:right-50 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>
@@ -80,7 +80,7 @@ export function AboutSection() {
                     alt="Grace Hopper Portrait"
                     width={550}
                     height={550}
-                    className="hidden md:block md:relative right-40 bottom-19 2xl:bottom-21 w-175 2xl:w-205 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative lg:right-20 xl:right-40 bottom-10 lg:bottom-13 xl:bottom-19 2xl:bottom-21 lg:w-150 xl:w-175 2xl:w-205 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
               </div>

@@ -3,15 +3,18 @@ import Image from "next/image"
 export function AgendaSection() {
   const scheduleItems = [
     { time: "9:00 AM", title: "KICKOFF & SPEECHES" },
-    { time: "9:15 AM", title: "KEYNOTE SPEECH / Q & A" },
-    { time: "10:00 AM", title: "WORKSHOPS BEGIN" },
-    { time: "11:00 AM", title: "LUNCH / FREE TIME" },
-    { time: "1:00 PM", title: "PANEL Q & A" },
-    { time: "2:00 PM", title: "CLOSING NOTES" },
+    { time: "9:15 AM", title: "KEYNOTE SPEECH / Q & A PANEL" },
+    { time: "10:30 AM", title: "SCAI MENTAL HEALTH ADVISORY WORKSHOP" },
+    { time: "11:00 AM", title: "AIS RESUME WORKSHOP" },
+    { time: "12:00 AM", title: "NETWORKING LUNCH" },
+    { time: "1:15 AM", title: "DISC INTERNSHIP PANEL" },
+    { time: "2:30 AM", title: "PORTFOLIO WORKSHOP - GREG VANNONI" },
+    { time: "3:30 PM", title: "SHPE WORKSHOP" },
+    { time: "4:30 PM", title: "CLOSING CEREMONY" },
   ]
 
   return (
-    <section id="agenda" className="max-h-[calc(100vh+10rem)] 2xl:max-h-[calc(100vh+8rem)] bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
+    <section id="agenda" className="max-h-[calc(100vh+15rem)] 2xl:max-h-[calc(100vh+10rem)] bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
       <div className="w-[80%] lg:max-w-6xl 2xl:max-w-[70%] mx-auto">
         <div className="relative">
           {/* Date + location Header */}
@@ -46,7 +49,7 @@ export function AgendaSection() {
             <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
               <div className="text-[clamp(1rem,1vw+0.25rem,2rem)] hidden lg:block lg:flex gap-4 sm:gap-6 xl:gap-20 2xl:gap-12 px-5 lg:px-10 pb-10 lg:pb-70 2xl:pb-120">
                 {/* Left column - Times */}
-                <div className="flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
+                <div className="hidden flex flex-col space-y-2 sm:space-y-3 xl:space-y-4 2xl:space-y-5">
                   {scheduleItems.map((item, index) => (
                     <span
                       key={index}
@@ -114,7 +117,7 @@ export function AgendaSection() {
                     alt="Margaret Ham Portrait"
                     width={450}
                     height={450}
-                    className="hidden md:block md:relative right-200 2xl:right-210 -bottom-110 2xl:-bottom-10 w-430 2xl:w-500 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative right-160 2xl:right-210 -bottom-100 2xl:-bottom-10 w-380 2xl:w-500 object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
             </div>

@@ -13,9 +13,9 @@ export function HeroSection() {
   }
 
   return (
-    <section className="bg-[var(--color-white)] flex items-center justify-center mb-[7%] lg:mb-[3%] 2xl:mb-[1.8%] overflow-hidden">
+    <section className="bg-[var(--color-white)] flex items-center justify-center overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-5.3rem)] pt-[3%]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-12rem)] xl:h-[calc(100vh-7.5rem)] 2xl:h-[calc(100vh+3rem)] pt-[3%]">
           {/* Left side - Portrait illustration */}
           <div style={{pointerEvents: "none"}} className="w-full lg:w-1/2 hidden lg:block">
             {/* <Image
@@ -32,7 +32,7 @@ export function HeroSection() {
                 width={0}
                 height={0}
                 sizes="(max-width: 1024px) 60vw, 40vw"
-                className="w-[60vw] md:w-[45vw] lg:w-[70vw] xl:w-[75vw] h-auto absolute top-[5vh] left-[-5vw] lg:left-[]-7vw xl:left-[-11vw]"
+                className="w-[60vw] md:w-[45vw] lg:w-[70vw] xl:w-[75vw] h-auto absolute z-0 top-[5vh] left-[-5vw] lg:left-[]-7vw xl:left-[-11vw]"
               />
 
             {/* invisible placeholder to preserve flow */}
@@ -87,7 +87,7 @@ export function HeroSection() {
                 <Button
                   size="lg"
                   asChild
-                  className="text-[clamp(0.7rem,1.5vw,3rem)] text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-30 xl:px-40 lg:py-10 2xl:py-15 rounded-full w-[80%] 2xl:ml-[18%]"
+                  className="text-[clamp(0.7rem,1.5vw,3rem)] text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-30 xl:px-40 lg:py-5 xl:py-10 2xl:py-15 rounded-full w-[80%] 2xl:ml-[18%]"
                 >
                   <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
                     REGISTER NOW
