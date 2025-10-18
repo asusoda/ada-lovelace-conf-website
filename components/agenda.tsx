@@ -9,7 +9,7 @@ export function AgendaSection() {
     { time: "11:25 AM", title: "Resume Mastery with AIS: Stand Out on Paper" },
     { time: "1:00 PM", title: "Lunch & Unwind: Networking and Therapy Dog" },
     { time: "1:50 PM", title: "Cracking the FAANG Interview - Zeel Shah" },
-    { time: "2:30 PM", title: "Showcase Your Story: Portfolio Workshop with Greg V" },
+    { time: "2:30 PM", title: "Running Smoothly: SRE Workshop with Greg V" },
     { time: "3:35 PM", title: "Mind Over Matter: Mental Health in Tech" },
     { time: "4:40 PM", title: "CLOSING CEREMONY" },
 
