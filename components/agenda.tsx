@@ -2,19 +2,21 @@ import Image from "next/image"
 
 export function AgendaSection() {
   const scheduleItems = [
-    { time: "9:00 AM", title: "KICKOFF & SPEECHES" },
-    { time: "9:15 AM", title: "KEYNOTE SPEECH / Q & A PANEL" },
-    { time: "10:30 AM", title: "SCAI MENTAL HEALTH ADVISORY WORKSHOP" },
-    { time: "11:00 AM", title: "AIS RESUME WORKSHOP" },
-    { time: "12:00 AM", title: "NETWORKING LUNCH" },
-    { time: "1:15 AM", title: "DISC INTERNSHIP PANEL" },
-    { time: "2:30 AM", title: "PORTFOLIO WORKSHOP - GREG VANNONI" },
-    { time: "3:30 PM", title: "SHPE WORKSHOP" },
-    { time: "4:30 PM", title: "CLOSING CEREMONY" },
+    { time: "9:00 AM", title: "Check-In" },
+    { time: "9:30 AM", title: "Welcome Ceremony" },
+    { time: "9:45 AM", title: "Trailblazers in Tech: Women Leading the Way" },
+    { time: "10:20 AM", title: "Inside the Internship: DISC Internship Panel" },
+    { time: "11:25 AM", title: "Resume Mastery with AIS: Stand Out on Paper" },
+    { time: "1:00 PM", title: "Lunch & Unwind: Networking and Therapy Dog" },
+    { time: "1:50 PM", title: "Cracking the FAANG Interview - Zeel Shah" },
+    { time: "2:30 PM", title: "Showcase Your Story: Portfolio Workshop with Greg V" },
+    { time: "3:35 PM", title: "Mind Over Matter: Mental Health in Tech" },
+    { time: "4:40 PM", title: "CLOSING CEREMONY" },
+
   ]
 
   return (
-    <section id="agenda" className="max-h-[calc(100vh+15rem)] 2xl:max-h-[calc(100vh+10rem)] bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
+    <section id="agenda" className="bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 pb-[2rem] px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
       <div className="w-[80%] lg:max-w-6xl 2xl:max-w-[70%] mx-auto">
         <div className="relative">
           {/* Date + location Header */}
@@ -83,11 +85,11 @@ export function AgendaSection() {
 
           {/* Illustration placeholders */}
           {/* Spacer to push down illustrations */}
-          <div className="hidden lg:block h-40 xl:h-64 2xl:h-80 bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm"></div>
+          <div className="hidden lg:block h-20 xl:h-40 2xl:h-60 bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm"></div>
 
-          <div className="relative mt-8 hidden lg:block">
-            {/* Left figure - person sitting/reclining */}
-            <div className="absolute bottom-70 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
+          + <div className="relative mt-8 hidden lg:block z-[2]">
+          {/* Left figure - person sitting/reclining */}
+            <div className="absolute bottom-40 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
                 {/* susan kare */}
                 <div className="w-full">
                   <Image
@@ -101,7 +103,7 @@ export function AgendaSection() {
             </div>
 
             {/* Right figure - person standing with books */}
-            <div className="absolute bottom-80 2xl:bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
+            <div className="absolute bottom-15 2xl:bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
                 {/* margarent ham*/}
                 <div className="w-full">
                   <Image
@@ -116,9 +118,12 @@ export function AgendaSection() {
           </div>
 
           {/* Spacer for absolute positioned elements */}
-          <div className="hidden xl:block h-80 xl:h-96 2xl:h-[28rem]"></div>
+
         </div>
       </div>
+      {/* Background extension to remove white gap under figures */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] lg:max-w-6xl 2xl:max-w-[70%] h-[14rem] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl z-[1]" />
+
     </section>
   )
 }
