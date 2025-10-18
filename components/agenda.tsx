@@ -122,7 +122,7 @@ export function AgendaSection() {
         </div>
       </div>
       {/* Background extension to remove white gap under figures */}
-      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] lg:max-w-6xl 2xl:max-w-[70%] h-[14rem] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl z-[1]" />
+      <div className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] lg:max-w-6xl 2xl:max-w-[70%] h-[14rem] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl z-[1]" />
 
     </section>
   )
