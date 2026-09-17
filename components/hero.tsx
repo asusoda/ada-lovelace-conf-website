@@ -46,9 +46,9 @@ export function HeroSection() {
             {/* Event details */}
             <div className="text-[0.5rem] lg:text-[clamp(1rem,0.7vw+0.25rem,3rem)] lg:px-0 flex w-full gap-5 lg:gap-3 xl:gap-10 2xl:gap-20 justify-center lg:justify-between font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
               <div className="flex-0 lg:flex-2 -mr-5 xl:-mr-0"></div>
-              <span className="text-left">October 18</span>
+              <span className="text-left">September 25</span>
               <span className="hidden lg:block">•</span>
-              <span>9AM-5PM</span>
+              <span>11AM-5PM</span>
               <span className="hidden lg:block">•</span>
               <span className="text-right lg:left-left">Memorial Union</span>
             </div>
@@ -63,7 +63,7 @@ export function HeroSection() {
                 <span className = "lg:ml-[27%] xl:ml-0 2xl:ml-[6%]">LOVELACE<br /></span>
                 <span className="lg:ml-[26%] xl:ml-[3%] 2xl:ml-[6%] whitespace-nowrap">
                   <span className="font-lejour">SUMMIT</span>
-                  <span className="opacity-50 font-lejour">2025</span>
+                  <span className="opacity-50 font-lejour">&nbsp;II</span>
                 </span>
               </h1>
             </div>
