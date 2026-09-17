@@ -89,7 +89,7 @@ export function HeroSection() {
                   asChild
                   className="text-[clamp(0.7rem,1.5vw,3rem)] text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-30 xl:px-40 lg:py-5 xl:py-10 2xl:py-15 rounded-full w-[80%] 2xl:ml-[18%]"
                 >
-                  <a href="https://sundevilcentral.eoss.asu.edu/SoDA/rsvp_boot?id=384609" target="_blank" rel="noopener noreferrer">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjvCQ_8rXlkl5nea6JkLgCWKSJ7a_IlqCOH2rn4IqWTVJeBA/viewform" target="_blank" rel="noopener noreferrer">
                     REGISTER NOW
                   </a>
                 </Button>
