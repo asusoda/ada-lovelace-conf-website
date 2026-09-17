@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-3 gap-8 justify-items-center">
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA & WiCS</h3>
+            <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA, WiCS & Quantum Club</h3>
             <p className="text-sm">
 
             </p>
@@ -41,7 +41,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-[var(--color-light-purple)] mt-8 pt-8 text-center text-sm">
-          <p>&copy; 2025 Software Developers Association at ASU. All rights reserved.</p>
+          <p>&copy; 2026 Software Developers Association at ASU. All rights reserved.</p>
           <p>Made by Jubilee and Justin :D</p>
         </div>
       </div>

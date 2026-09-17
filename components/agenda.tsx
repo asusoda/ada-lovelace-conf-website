@@ -2,16 +2,15 @@ import Image from "next/image"
 
 export function AgendaSection() {
   const scheduleItems = [
-    { time: "9:00 AM", title: "Check-In" },
-    { time: "9:30 AM", title: "Welcome Ceremony" },
-    { time: "9:45 AM", title: "Trailblazers in Tech: Women Leading the Way" },
-    { time: "10:20 AM", title: "Inside the Internship: DISC Internship Panel" },
-    { time: "11:25 AM", title: "Resume Mastery with AIS: Stand Out on Paper" },
-    { time: "1:00 PM", title: "Lunch & Unwind: Networking and Therapy Dog" },
-    { time: "1:50 PM", title: "Cracking the FAANG Interview - Zeel Shah" },
-    { time: "2:30 PM", title: "Running Smoothly: SRE Workshop with Greg V" },
-    { time: "3:35 PM", title: "Mind Over Matter: Mental Health in Tech" },
-    { time: "4:40 PM", title: "CLOSING CEREMONY" },
+    { time: "11:15 AM", title: "Kickoff and Speeches" },
+    { time: "11:30 AM", title: "Keynote Speaker" },
+    { time: "11:45 AM", title: "Cross-Sector Q&A Panel (AMEX, Biotech)" },
+    { time: "12:15 PM", title: "Resume Roast Workshop with DevLabs" },
+    { time: "12:45 PM", title: "Lunch & Networking (Cochise)" },
+    { time: "2:00 PM", title: "Industry Misc." },
+    { time: "3:00 PM", title: "Soft Skills Workshop with CVS" },
+    { time: "3:30 PM", title: "Hard Skills Workshop with Hacker Devils" },
+    { time: "4:30 PM", title: "Closing Ceremony" },
 
   ]
 
@@ -23,10 +22,10 @@ export function AgendaSection() {
           <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between mb-6 2xl:mb-10 pt-5 2xl:pt-10">
             <div className="hidden lg:block font-lejour text-left text-[var(--color-blue)] mt-auto mb-2 text-sm lg:text-[clamp(1rem,1.3vw+0.25rem,5rem)]">
               <p className="font-bold tracking-wider uppercase">
-                SATURDAY, OCTOBER 18TH
+                FRIDAY, SEPTEMBER 25TH
               </p>
               <p className="font-medium tracking-wider uppercase">
-                MEMORIAL UNION - TURQUOISE ROOM 220
+                MEMORIAL UNION - PIMA AUDITORIUM
               </p>
             </div>
             {/* Large AGENDA title */}
@@ -37,10 +36,10 @@ export function AgendaSection() {
             {/* mobile view date and time */}
             <div className="lg:hidden font-lejour text-left text-[var(--color-blue)] mt-auto mb-0 lg:mb-2">
               <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-medium tracking-wider uppercase">
-                SATURDAY, OCTOBER 18TH
+                FRIDAY, SEPTEMBER 25TH
               </p>
               <p className="text-sm sm:text-base xl:text-xl 2xl:text-3xl font-medium tracking-wider uppercase">
-                MEMORIAL UNION - TURQUOISE ROOM 220
+                MEMORIAL UNION - PIMA AUDITORIUM
               </p>
             </div>
 
@@ -87,7 +86,7 @@ export function AgendaSection() {
           {/* Spacer to push down illustrations */}
           <div className="hidden lg:block h-20 xl:h-40 2xl:h-60 bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm"></div>
 
-          + <div className="relative mt-8 hidden lg:block z-[2]">
+          <div className="relative mt-8 hidden lg:block z-[2]">
           {/* Left figure - person sitting/reclining */}
             <div className="absolute bottom-40 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
                 {/* susan kare */}
