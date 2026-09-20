@@ -14,7 +14,7 @@ export function BackToTop() {
   }
 
   return (
-    <div className="flex justify-center bg-[var(--color-blue)] px-6 pb-8">
+    <div className="fixed bottom-6 right-6 z-30">
       <Button
         type="button"
         onClick={handleClick}
