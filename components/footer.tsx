@@ -3,11 +3,11 @@ import Link from "next/link"
 export function Footer() {
   return (
     <footer className="bg-[var(--color-blue)] text-white">
-      <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8">
-        <div className="grid gap-10 sm:grid-cols-3">
+      <div className="mx-auto max-w-6xl px-6 py-12 sm:px-8">
+        <div className="grid gap-8 sm:grid-cols-3">
           <div>
             <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA & WiCS</h3>
-            <p className="text-sm leading-relaxed">Ada Lovelace Summit III<br />September 25, 2026</p>
+            <p className="text-sm leading-relaxed">Ada Lovelace Summit III</p>
           </div>
 
           <div>
