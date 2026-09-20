@@ -3,7 +3,7 @@ import Image from "next/image"
 
 export function AboutSection() {
   return (
-    <section id="about" className="md:h-[calc(100vh+17rem)] lg:h-[calc(100vh+10rem)] xl:h-[calc(100vh+18rem)] 2xl:h-[calc(100vw-34rem)] bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden relative z-50">
+    <section id="about" className="bg-[var(--color-blue)] py-18 lg:py-32 overflow-hidden relative z-50">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="">
           {/* Left side - Title and Description */}
@@ -29,7 +29,7 @@ export function AboutSection() {
             </div>
 
             <div className="flex">
-              <div className="flex-0 md:flex-2 md:min-w-20 lg:min-w-20 xl:min-w-40 2xl:min-w-60 overflow-visible">
+              <div className="hidden xl:block flex-0 md:flex-2 md:min-w-20 lg:min-w-20 xl:min-w-40 2xl:min-w-60 overflow-visible">
                 {/* annie easley */}
                 <div className="w-full">
                   <Image
@@ -60,7 +60,7 @@ export function AboutSection() {
                   </li>
                 </ul>
               </div>
-              <div className="flex-0 md:flex-2 md:min-w-80 lg:min-w-60 xl:min-w-80 overflow-visible">
+              <div className="hidden xl:block flex-0 md:flex-2 md:min-w-80 lg:min-w-60 xl:min-w-80 overflow-visible">
                 {/* hedy lamarr */}
                 <div className="w-full">
                   <Image
@@ -72,7 +72,7 @@ export function AboutSection() {
                   />
                 </div>
               </div>
-              <div className="flex-0 md:flex-1 md:min-w-60 overflow-visible">
+              <div className="hidden xl:block flex-0 md:flex-1 md:min-w-60 overflow-visible">
                 {/* grace hopper */}
                 <div className="w-full">
                   <Image
