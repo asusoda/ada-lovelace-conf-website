@@ -130,7 +130,7 @@
 
 
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-poppins), Arial, sans-serif;
   --font-mono: var(--font-geist-mono);
   --font-lejour: "Le Jour Serif", "Arial", serif;
   --font-lucidity: "Lucidity Expand", "Georgia", serif;
@@ -185,5 +185,25 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section[id] {
+  scroll-margin-top: 1.5rem;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }

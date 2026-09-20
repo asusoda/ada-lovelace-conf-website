@@ -1,62 +1,18 @@
-"use client"
-
 import Link from "next/link"
 import Image from "next/image"
 
 export function Header() {
-  const navigation = [
-    { name: "About", href: "/about" },
-    { name: "Agenda", href: "/agenda" },
-  ]
-
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    // Map route paths to section IDs
-    const sectionMap: { [key: string]: string } = {
-      "/about": "#about",
-      "/agenda": "#agenda",
-    }
-
-    const sectionId = sectionMap[href]
-    if (sectionId) {
-      const element = document.querySelector(sectionId)
-      if (element) {
-        e.preventDefault()
-        element.scrollIntoView({ behavior: "smooth", block: "start" })
-      }
-    }
-  }
-
   return (
-    <header className="font-lejour">
-      <div style={{alignContent: "center", justifyContent: "space-between"}} className="top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
-          <div className="flex flex-3 w-[80%] gap-[30%]">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
-                className="hidden md:block text-[var(--color-blue)] hover:text-blue-900 uppercase text-3xl 2xl:text-[3.2rem] transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
-          </div>
-        <Link href="/" className="flex">
-          <Image
-            src="/soda-logo-blue.svg"
-            alt="./SoDA Logo"
-            width={160}
-            height={160}
-            className="w-20 lg:w-40"
-            />
-          <Image
-            src="/wics-logo-blue.svg"
-            alt="WiCS Logo"
-            width={160}
-            height={160}
-            className="w-20 lg:w-40"
-            />
+    <header className="bg-[var(--color-light-purple)] px-5 text-[var(--color-blue)] sm:px-8">
+      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 py-3">
+        <Link href="/" aria-label="Ada Lovelace Summit home" className="flex items-center gap-2 rounded-lg">
+          <Image src="/soda-logo-blue.svg" alt="./SoDA" width={80} height={80} className="h-14 w-14 sm:h-20 sm:w-20" />
+          <Image src="/wics-logo-blue.svg" alt="WiCS" width={80} height={80} className="h-14 w-14 sm:h-20 sm:w-20" />
         </Link>
+        <nav aria-label="Main navigation" className="font-poppins flex items-center gap-5 text-sm font-semibold sm:gap-8 sm:text-base">
+          <a href="#about" className="rounded py-3 underline-offset-4 hover:underline">About</a>
+          <a href="#agenda" className="rounded py-3 underline-offset-4 hover:underline">Agenda</a>
+        </nav>
       </div>
     </header>
   )

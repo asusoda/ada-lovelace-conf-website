@@ -29,8 +29,8 @@ const poppinsSansSerif = localFont({
 })
 
 export const metadata: Metadata = {
-  title: "Ada Lovelace Summit II",
-  description: "Ada Lovelace Summit II, a Women in Tech Conference hosted by ./SoDA and WiCS at ASU",
+  title: "Ada Lovelace Summit III",
+  description: "Ada Lovelace Summit III, the third annual Women in Tech Conference hosted by ./SoDA and WiCS at ASU",
   generator: "v0.app",
 }
 
