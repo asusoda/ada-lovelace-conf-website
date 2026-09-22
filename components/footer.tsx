@@ -7,7 +7,9 @@ export function Footer() {
         <div className="grid gap-8 sm:grid-cols-3">
           <div>
             <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA & WiCS</h3>
-            <p className="text-sm leading-relaxed">Ada Lovelace Summit III</p>
+            <p className="text-sm">
+
+            </p>
           </div>
 
           <div>
