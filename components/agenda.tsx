@@ -1,14 +1,4 @@
-const scheduleItems = [
-  { time: "11:15 AM", dateTime: "11:15", title: "Kickoff and Speeches" },
-  { time: "11:30 AM", dateTime: "11:30", title: "Keynote Speaker" },
-  { time: "11:45 AM", dateTime: "11:45", title: "Cross-Sector Q&A Panel (AMEX, Biotech)" },
-  { time: "12:15 PM", dateTime: "12:15", title: "Resume Roast Workshop with DevLabs" },
-  { time: "12:45 PM", dateTime: "12:45", title: "Lunch & Networking (Cochise)" },
-  { time: "2:00 PM", dateTime: "14:00", title: "Industry Misc." },
-  { time: "3:00 PM", dateTime: "15:00", title: "Soft Skills Workshop with CVS" },
-  { time: "3:30 PM", dateTime: "15:30", title: "Hard Skills Workshop with Hacker Devils" },
-  { time: "4:30 PM", dateTime: "16:30", title: "Closing Ceremony" },
-]
+import Image from "next/image"
 
 export function AgendaSection() {
   const scheduleItems = [
@@ -81,34 +71,48 @@ export function AgendaSection() {
               </div>
             </div>
           </div>
-        </div>
 
-        <div className="overflow-hidden rounded-2xl border border-[var(--color-blue)]/15 bg-[var(--color-light-purple)] sm:rounded-3xl">
-          <div className="border-b border-[var(--color-blue)]/15 px-5 py-5 sm:px-8 lg:px-10">
-            <p className="font-poppins text-xs font-semibold uppercase tracking-[0.2em] sm:text-sm">
-              A day of connection &amp; discovery
-            </p>
+          {/* Illustration placeholders */}
+          {/* Spacer to push down illustrations */}
+          <div className="hidden lg:block h-20 xl:h-40 2xl:h-60 bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm"></div>
+
+          <div className="relative mt-8 hidden lg:block z-[2]">
+          {/* Left figure - person sitting/reclining */}
+            <div className="absolute bottom-40 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
+                {/* susan kare */}
+                <div className="w-full">
+                  <Image
+                    src="/susan-kare.svg"
+                    alt="Susan Kare Portrait"
+                    width={400}
+                    height={400}
+                    className="hidden md:block md:relative right-50 2xl:right-90 -bottom-60 2xl:bottom-30 w-250 2xl:w-350 object-contain max-w-none h-pointer-events-none"
+                  />
+                </div>
+            </div>
+
+            {/* Right figure - person standing with books */}
+            <div className="absolute bottom-15 2xl:bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
+                {/* margarent ham*/}
+                <div className="w-full">
+                  <Image
+                    src="/margaret-ham.svg"
+                    alt="Margaret Ham Portrait"
+                    width={450}
+                    height={450}
+                    className="hidden md:block md:relative right-157 2xl:right-210 -bottom-100 2xl:-bottom-10 w-380 2xl:w-500 object-contain max-w-none h-pointer-events-none"
+                  />
+                </div>
+            </div>
           </div>
-          <ol className="divide-y divide-[var(--color-blue)]/15 px-5 sm:px-8 lg:px-10">
-            {scheduleItems.map((item) => (
-              <li
-                key={item.dateTime}
-                className="grid gap-2 py-5 sm:grid-cols-[7rem_minmax(0,1fr)] sm:items-baseline sm:gap-8 sm:py-6 lg:grid-cols-[9rem_minmax(0,1fr)]"
-              >
-                <time
-                  dateTime={item.dateTime}
-                  className="font-poppins whitespace-nowrap text-sm font-semibold tabular-nums sm:text-base"
-                >
-                  {item.time}
-                </time>
-                <p className="font-poppins min-w-0 text-base leading-relaxed font-semibold break-words sm:text-lg lg:text-xl">
-                  {item.title}
-                </p>
-              </li>
-            ))}
-          </ol>
+
+          {/* Spacer for absolute positioned elements */}
+
         </div>
       </div>
+      {/* Background extension to remove white gap under figures */}
+      <div className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] lg:max-w-6xl 2xl:max-w-[70%] h-[14rem] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl z-[1]" />
+
     </section>
   )
 }
