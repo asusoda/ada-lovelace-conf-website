@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-8">
         <div className="grid md:grid-cols-3 gap-8 justify-items-center">
           <div>
-            <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA, WiCS & Quantum Club</h3>
+            <h3 className="text-lg font-semibold mb-4 font-poppins">./SoDA & WiCS</h3>
             <p className="text-sm">
 
             </p>

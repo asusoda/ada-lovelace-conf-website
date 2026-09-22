@@ -56,6 +56,13 @@ export function Header() {
             height={160}
             className="w-20 lg:w-40"
             />
+          <Image
+            src="/ai-society-logo-blue.svg"
+            alt="AI Society Logo"
+            width={160}
+            height={160}
+            className="w-12 lg:w-20"
+            />
         </Link>
       </div>
     </header>

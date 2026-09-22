@@ -17,7 +17,7 @@ export function AboutSection() {
               </h2>
               <div className="space-y-6 text-[var(--color-light-purple)] text-poppins xl:text-[1.4rem] 2xl:text-3xl leading-relaxed tracking-wider">
                 <p>
-                  Join us this fall semester for the second annual Ada Lovelace Summit, a Women in Tech Conference hosted by the Software Developers Association (./SoDA) in collaboration with Women in Computer Science (WiCS) and the Quantum Club.
+                  Join us this fall semester for the second annual Ada Lovelace Summit, a Women in Tech Conference hosted by the Software Developers Association (./SoDA) in collaboration with Women in Computer Science (WiCS).
                 </p>
                 <p>
                 This event brings together women and underrepresented groups in tech to network, discover new career pathways, and build meaningful connections with industry leaders. 
