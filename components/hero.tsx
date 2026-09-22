@@ -1,29 +1,122 @@
-import Image from "next/image"
-import { ArrowDown } from "lucide-react"
+"use client"
+
+import { Button } from "@/components/ui/button";
+import { ArrowDown } from "lucide-react";
+import Image from "next/image";
 
 export function HeroSection() {
+  const handleLearnMoreClick = () => {
+    const aboutSection = document.querySelector("#about")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth", block: "start" })
+    }
+  }
+
   return (
-    <section className="hero-section bg-[var(--color-white)] text-[var(--color-blue)]">
-      <div className="hero-layout">
-        <div className="hero-portrait">
-          <Image src="/ada-lovelace.svg" alt="Ada Lovelace Portrait" width={1200} height={900} priority className="hero-portrait-image" />
-        </div>
-        <div className="hero-content">
-          <div className="font-poppins flex flex-wrap items-center gap-x-5 gap-y-2 text-sm leading-relaxed sm:text-base xl:text-lg">
-            <span>September 25, 2026</span>
-            <span>11 AM–5 PM</span>
-            <span>Memorial Union</span>
+    <section className="bg-[var(--color-white)] flex items-center justify-center overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-12rem)] xl:h-[calc(100vh-7.5rem)] 2xl:h-[calc(100vh+3rem)] pt-[3%]">
+          {/* Left side - Portrait illustration */}
+          <div style={{pointerEvents: "none"}} className="w-full lg:w-1/2 hidden lg:block">
+            {/* <Image
+              src="/ada-lovelace.svg"
+              alt="Ada Lovelace Portrait"
+              width={900}
+              height={900}
+              className="absolute h-screen w-auto lg:top-8 lg:-left-38 2xl:-left-50 max-w-none object-contain h-pointer-events-none"
+            /> */}
+
+              <Image
+                src="/ada-lovelace.svg"
+                alt="Ada Lovelace Portrait"
+                width={0}
+                height={0}
+                sizes="(max-width: 1024px) 60vw, 40vw"
+                className="w-[60vw] md:w-[45vw] lg:w-[70vw] xl:w-[75vw] h-auto absolute z-0 top-[5vh] left-[-5vw] lg:left-[]-7vw xl:left-[-11vw]"
+              />
+
+            {/* invisible placeholder to preserve flow */}
+            <div className="w-full h-[500px] lg:h-[700px]" />
+
           </div>
-          <h1 className="font-lejour my-8 text-[clamp(2.65rem,6vw,8rem)] leading-[1.12] sm:my-10">
-            ADA<br />LOVELACE<br />
-            <span className="whitespace-nowrap">SUMMIT <span className="opacity-60">III</span></span>
-          </h1>
-          <div className="font-lucidity flex max-w-md flex-col gap-4">
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjvCQ_8rXlkl5nea6JkLgCWKSJ7a_IlqCOH2rn4IqWTVJeBA/viewform" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center rounded-full bg-[var(--color-blue)] px-6 py-4 text-center text-sm text-white transition-colors hover:bg-[var(--color-dark-purple)] sm:min-h-16 sm:text-base xl:text-xl">REGISTER NOW</a>
-            <a href="#about" className="inline-flex min-h-14 items-center justify-center gap-3 rounded-full border-2 border-[var(--color-blue)] px-6 py-4 text-center text-sm transition-colors hover:bg-[var(--color-light-purple)] sm:min-h-16 sm:text-base xl:text-xl">LEARN MORE <ArrowDown size={20} aria-hidden="true" /></a>
+
+          
+          {/* Right side - Content */}
+          <div className=" flex-1 w-full text-[var(--color-blue)] space-y-5 2xl:pt-[3%] xl:pt-[1%] h-full lg:pr-5 px-10">
+            {/* Event details */}
+            <div className="text-[0.5rem] lg:text-[clamp(1rem,0.7vw+0.25rem,3rem)] lg:px-0 flex w-full gap-5 lg:gap-3 xl:gap-10 2xl:gap-20 justify-center lg:justify-between font-lucidity uppercase tracking-wider xl:ml-[2%] 2xl:ml-[9%] whitespace-nowrap">
+              <div className="flex-0 lg:flex-2 -mr-5 xl:-mr-0"></div>
+              <span className="text-left">September 25</span>
+              <span className="hidden lg:block">•</span>
+              <span>11AM-5PM</span>
+              <span className="hidden lg:block">•</span>
+              <span className="text-right lg:left-left">Memorial Union</span>
+            </div>
+
+            {/*  text-[0.5rem] xl:text-sm 2xl:text-lg  */}
+
+            {/* Title */}
+            <div className="space-y-10 mt-[10%] lg:ml-10 2xl:ml-[13%] flex justify-center">
+              <h1 className="font-lejour text-[var(--color-blue)] font-bold leading-none
+                  text-[clamp(3rem,6vw+1rem,8rem)] 2xl:tracking-wider 2xl:ml-[10%]">
+                <span className="lg:ml-[30%] xl:ml-[7%] 2xl:ml-[10%]">ADA<br /></span>
+                <span className = "lg:ml-[27%] xl:ml-0 2xl:ml-[6%]">LOVELACE<br /></span>
+                <span className="lg:ml-[26%] xl:ml-[3%] 2xl:ml-[6%] whitespace-nowrap">
+                  <span className="font-lejour">SUMMIT</span>
+                  <span className="opacity-50 font-lejour">&nbsp;II</span>
+                </span>
+              </h1>
+            </div>
+
+            { /* sm:text-lg md:text-6xl lg:text-7xl xl:text-[7rem] */}
+
+              <div className="flex lg:px-10 ">
+                {/* mobile layout ada lovelace svg */}
+                <div className="min-w-20 lg:hidden">
+                  <Image
+                    src="/ada-lovelace.svg"
+                    alt="Ada Lovelace Portrait"
+                    width={400}
+                    height={400}
+                    className="absolute w-55 -left-10 bottom-60 object-contain h-pointer-events-none"
+                  />
+                </div>
+                
+                            {/* CTA Buttons */}
+               <div className="flex flex-col gap-4 pt-4 justify-center px-2 lg:px-10 lg:pl-[45%] xl:pl-[40%] 2xl:mt-[3%]">
+                <Button
+                  size="lg"
+                  asChild
+                  className="text-[clamp(0.7rem,1.5vw,3rem)] text-[var(--color-white)] bg-[var(--color-blue)] font-lucidity hover:bg-blue-500 hover:scale-105 transition-transform font-semibold lg:px-30 xl:px-40 lg:py-5 xl:py-10 2xl:py-15 rounded-full w-[80%] 2xl:ml-[18%]"
+                >
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjvCQ_8rXlkl5nea6JkLgCWKSJ7a_IlqCOH2rn4IqWTVJeBA/viewform" target="_blank" rel="noopener noreferrer">
+                    REGISTER NOW
+                  </a>
+                </Button>
+
+                {/* text-[0.5rem] lg:text-md lg:text-2xl 2xl:text-3xl */}
+                
+                <Button
+                  size="lg"
+                  variant="outline"
+                  onClick={handleLearnMoreClick}
+                  className="text-[clamp(0.7rem,1.5vw,3rem)] font-lucidity border-2 border-[var(--color-blue)] text-[var(--color-blue)] hover:bg-white hover:text-primary font-semibold lg:px-9 2xl:py-10 rounded-full bg-transparent w-[80%] 2xl:ml-[18%] cursor-pointer"
+                >
+                  LEARN MORE
+                  <div className="animate-bounce text-[var(--color-blue)]">
+                  <ArrowDown size={5}/>
+                  </div>
+                </Button>
+                            </div>
+              </div>
+
+
           </div>
         </div>
       </div>
+
+      {/* Scroll indicator */}
+
     </section>
-  )
+  );
 }

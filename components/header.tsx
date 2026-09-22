@@ -1,7 +1,31 @@
+"use client"
+
 import Link from "next/link"
 import Image from "next/image"
 
 export function Header() {
+  const navigation = [
+    { name: "About", href: "/about" },
+    { name: "Agenda", href: "/agenda" },
+  ]
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Map route paths to section IDs
+    const sectionMap: { [key: string]: string } = {
+      "/about": "#about",
+      "/agenda": "#agenda",
+    }
+
+    const sectionId = sectionMap[href]
+    if (sectionId) {
+      const element = document.querySelector(sectionId)
+      if (element) {
+        e.preventDefault()
+        element.scrollIntoView({ behavior: "smooth", block: "start" })
+      }
+    }
+  }
+
   return (
     <header className="font-lejour">
       <div style={{alignContent: "center", justifyContent: "space-between"}} className="top-0 left-0 w-full h-[10%] 2xl:h-[10%] bg-[var(--color-light-purple)] items-center flex justify-between px-[8%]">
