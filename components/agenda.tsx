@@ -2,16 +2,15 @@ import Image from "next/image"
 
 export function AgendaSection() {
   const scheduleItems = [
-    { time: "11:15 AM", title: "Kickoff and Speeches" },
-    { time: "11:30 AM", title: "Keynote Speaker" },
-    { time: "11:45 AM", title: "Cross-Sector Q&A Panel (AMEX, Biotech)" },
-    { time: "12:15 PM", title: "Resume Roast Workshop with DevLabs" },
-    { time: "12:45 PM", title: "Lunch & Networking (Cochise)" },
-    { time: "2:00 PM", title: "Industry Misc." },
-    { time: "3:00 PM", title: "Soft Skills Workshop with CVS" },
-    { time: "3:30 PM", title: "Hard Skills Workshop with Hacker Devils" },
+    { time: "11:00 AM", title: "Kickoff and Speeches" },
+    { time: "11:15 AM", title: "Keynote Speaker" },
+    { time: "11:45 AM", title: "Cross-Sector Q&A panel (AMEX, Biotech)" },
+    { time: "12:30 PM", title: "Resume roast workshop with Devlabs" },
+    { time: "1:00 PM", title: "Lunch & Networking @ Cochise" },
+    { time: "2:00 PM", title: "Academia Workshop" },
+    { time: "3:00 PM", title: "Soft skills workshop with CVS" },
+    { time: "3:45 PM", title: "Hard skills workshop with Hacker Devils" },
     { time: "4:30 PM", title: "Closing Ceremony" },
-
   ]
 
   return (
@@ -49,15 +48,10 @@ export function AgendaSection() {
 
             <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
               <div className="hidden lg:flex flex-col text-[clamp(1rem,1vw+0.25rem,2rem)] gap-3 xl:gap-4 px-5 lg:px-10 pb-10 -ml-6 xl:-ml-10 2xl:-ml-12">
-                {/* Left column - Times */}
               {scheduleItems.map((item, index) => (
                 <div key={index} className="flex flex-row items-start gap-8 xl:gap-16 2xl:gap-20">
-                  <span className="font-bold w-[10rem] shrink-0 text-right">
-                    {item.time}
-                  </span>
-                  <span className="font-bold flex-1 text-left break-words">
-                    {item.title}
-                  </span>
+                  <span className="font-bold w-[10rem] shrink-0 text-right">{item.time}</span>
+                  <span className="font-bold flex-1 text-left break-words">{item.title}</span>
                 </div>
               ))}
             </div>
@@ -70,12 +64,8 @@ export function AgendaSection() {
                     key={index}
                     className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 xl:gap-6 py-1 sm:py-2"
                   >
-                    <span className="text-[0.5rem] sm:text-lg xl:text-xl 2xl:text-2xl font-bold sm:min-w-[100px] xl:min-w-[120px] 2xl:min-w-[140px]">
-                      {item.time}
-                    </span>
-                    <span className="text-[0.5rem] sm:text-base xl:text-lg 2xl:text-xl font-medium uppercase tracking-wide">
-                      {item.title}
-                    </span>
+                    <span className="text-[0.5rem] sm:text-lg xl:text-xl 2xl:text-2xl font-bold sm:min-w-[100px] xl:min-w-[120px] 2xl:min-w-[140px]">{item.time}</span>
+                    <span className="text-[0.5rem] sm:text-base xl:text-lg 2xl:text-xl font-medium uppercase tracking-wide">{item.title}</span>
                   </div>
                 ))}
               </div>
