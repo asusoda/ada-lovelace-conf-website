@@ -2,14 +2,14 @@ import Image from "next/image"
 
 export function AgendaSection() {
   const scheduleItems = [
+    { time: "10:30 AM", title: "Check-in" },
     { time: "11:00 AM", title: "Kickoff and Speeches" },
     { time: "11:15 AM", title: "Keynote Speaker" },
-    { time: "11:45 AM", title: "Cross-Sector Q&A panel (AMEX, Biotech)" },
-    { time: "12:30 PM", title: "Resume roast workshop with Devlabs" },
-    { time: "1:00 PM", title: "Lunch & Networking @ Cochise" },
-    { time: "2:00 PM", title: "Academia Workshop" },
-    { time: "3:00 PM", title: "Soft skills workshop with CVS" },
-    { time: "3:45 PM", title: "Hard skills workshop with Hacker Devils" },
+    { time: "11:45 AM", title: "Cross-Sector Panel: Tech Careers Beyond the Classroom" },
+    { time: "12:45 PM", title: "Networking Lunch @ Cochise" },
+    { time: "2:00 PM", title: "Building Tech Systems to Solve Business & Societal Problems" },
+    { time: "3:00 PM", title: "Resume Roast with Nationwide" },
+    { time: "3:45 PM", title: "How to Scale an API to 1M User Requests per Second" },
     { time: "4:30 PM", title: "Closing Ceremony" },
   ]
 
