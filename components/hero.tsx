@@ -15,7 +15,7 @@ export function HeroSection() {
   return (
     <section className="bg-[var(--color-white)] flex items-center justify-center overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 h-[21rem] lg:h-[calc(100vh-12rem)] xl:h-[calc(100vh-7.5rem)] 2xl:h-[calc(100vh+3rem)] pt-[3%]">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-5 min-h-[21rem] pb-10 lg:pb-0 lg:min-h-0 lg:h-[calc(100vh-12rem)] xl:h-[calc(100vh-7.5rem)] 2xl:h-[calc(100vh+3rem)] pt-[3%]">
           {/* Left side - Portrait illustration */}
           <div style={{pointerEvents: "none"}} className="w-full lg:w-1/2 hidden lg:block">
             {/* <Image

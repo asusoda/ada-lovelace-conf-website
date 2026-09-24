@@ -14,12 +14,12 @@ export function AgendaSection() {
   ]
 
   return (
-    <section id="agenda" className="bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-16 pb-[2rem] px-4 sm:px-6 xl:px-8 2xl:px-12 relative overflow-hidden">
-      <div className="w-[80%] lg:max-w-6xl 2xl:max-w-[70%] mx-auto">
+    <section id="agenda" className="bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-[7.82vw] pb-[2rem] px-4 sm:px-6 xl:px-8 2xl:px-[2.08vw] relative overflow-hidden">
+      <div className="w-[80%] lg:max-w-6xl 2xl:w-[75vw] 2xl:max-w-none mx-auto">
         <div className="relative">
           {/* Date + location Header */}
-          <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between mb-6 2xl:mb-10 pt-5 2xl:pt-10">
-            <div className="hidden lg:block font-lejour text-left text-[var(--color-blue)] mt-auto mb-2 text-sm lg:text-[clamp(1rem,1.3vw+0.25rem,5rem)]">
+          <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between mb-6 2xl:mb-[1.56vw] pt-5 2xl:pt-[1.3vw]">
+            <div className="hidden lg:block font-lejour text-left text-[var(--color-blue)] mt-auto mb-2 text-sm lg:text-[clamp(1rem,1.3vw+0.25rem,5rem)] 2xl:text-[1.56vw]">
               <p className="font-bold tracking-wider uppercase">
                 FRIDAY, SEPTEMBER 25TH
               </p>
@@ -28,7 +28,7 @@ export function AgendaSection() {
               </p>
             </div>
             {/* Large AGENDA title */}
-            <h1 className="font-lejour text-[clamp(3rem,6vw+1rem,8rem)] font-bold text-[var(--color-blue)] tracking-wider xl:text-right mb-none pb-none leading-none">
+            <h1 className="font-lejour text-[clamp(3rem,6vw+1rem,8rem)] 2xl:text-[7.04vw] font-bold text-[var(--color-blue)] tracking-wider xl:text-right mb-none pb-none leading-none">
               AGENDA
             </h1>
 
@@ -46,11 +46,11 @@ export function AgendaSection() {
 
           <div className="relative">
 
-            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
-              <div className="hidden lg:flex flex-col text-[clamp(1rem,1vw+0.25rem,2rem)] gap-3 xl:gap-4 px-5 lg:px-10 pb-10 -ml-6 xl:-ml-10 2xl:-ml-12">
+            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-[2.6vw] pr-32 xl:pr-48 2xl:pr-[12.5vw] backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
+              <div className="hidden lg:flex flex-col text-[clamp(1rem,1vw+0.25rem,2rem)] 2xl:text-[1.26vw] gap-3 xl:gap-4 2xl:gap-[1.04vw] px-5 lg:px-10 2xl:px-[2.6vw] pb-10 2xl:pb-[2.6vw] -ml-6 xl:-ml-10 2xl:-ml-[2.6vw]">
               {scheduleItems.map((item, index) => (
-                <div key={index} className="flex flex-row items-start gap-8 xl:gap-16 2xl:gap-20">
-                  <span className="font-bold w-[10rem] shrink-0 text-right">{item.time}</span>
+                <div key={index} className="flex flex-row items-start gap-8 xl:gap-16 2xl:gap-[4.17vw]">
+                  <span className="font-bold w-[10rem] 2xl:w-[10.42vw] shrink-0 text-right">{item.time}</span>
                   <span className="font-bold flex-1 text-left break-words">{item.title}</span>
                 </div>
               ))}
@@ -74,11 +74,11 @@ export function AgendaSection() {
 
           {/* Illustration placeholders */}
           {/* Spacer to push down illustrations */}
-          <div className="hidden lg:block h-20 xl:h-40 2xl:h-60 bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-10 pr-32 xl:pr-48 2xl:pr-64 backdrop-blur-sm"></div>
+          <div className="hidden lg:block h-56 xl:h-40 2xl:h-[10.42vw] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 pr-32 xl:pr-48 backdrop-blur-sm"></div>
 
-          <div className="relative mt-8 hidden lg:block z-[2]">
+          <div className="relative mt-8 2xl:mt-[2.08vw] hidden lg:block z-[2]">
           {/* Left figure - person sitting/reclining */}
-            <div className="absolute bottom-40 2xl:bottom-0 left-0 w-48 xl:w-70 2xl:w-80 h-60 xl:h-80 2xl:h-96 rounded-lg flex items-center justify-center">
+            <div className="absolute bottom-40 2xl:bottom-[10.42vw] left-0 w-48 xl:w-70 2xl:w-[18.24vw] h-60 xl:h-80 2xl:h-[20.85vw] rounded-lg flex items-center justify-center">
                 {/* susan kare */}
                 <div className="w-full">
                   <Image
@@ -86,13 +86,13 @@ export function AgendaSection() {
                     alt="Susan Kare Portrait"
                     width={400}
                     height={400}
-                    className="hidden md:block md:relative right-50 2xl:right-90 -bottom-60 2xl:bottom-30 w-250 2xl:w-350 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative right-50 2xl:right-[13.03vw] -bottom-60 2xl:-bottom-[15.64vw] w-250 2xl:w-[65.15vw] object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
             </div>
 
             {/* Right figure - person standing with books */}
-            <div className="absolute bottom-15 2xl:bottom-0 right-0 w-48 xl:w-64 2xl:w-80 h-72 xl:h-96 2xl:h-[28rem] rounded-lg flex items-center justify-center">
+            <div className="absolute bottom-15 2xl:bottom-[3.91vw] right-0 w-48 xl:w-64 2xl:w-[16.68vw] h-72 xl:h-96 2xl:h-[25.02vw] rounded-lg flex items-center justify-center">
                 {/* margarent ham*/}
                 <div className="w-full">
                   <Image
@@ -100,7 +100,7 @@ export function AgendaSection() {
                     alt="Margaret Ham Portrait"
                     width={450}
                     height={450}
-                    className="hidden md:block md:relative right-157 2xl:right-210 -bottom-100 2xl:-bottom-10 w-380 2xl:w-500 object-contain max-w-none h-pointer-events-none"
+                    className="hidden md:block md:relative right-157 2xl:right-[40.91vw] -bottom-100 2xl:-bottom-[26.06vw] w-380 2xl:w-[99.02vw] object-contain max-w-none h-pointer-events-none"
                   />
                 </div>
             </div>
@@ -111,7 +111,7 @@ export function AgendaSection() {
         </div>
       </div>
       {/* Background extension to remove white gap under figures */}
-      <div className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] lg:max-w-6xl 2xl:max-w-[70%] h-[14rem] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl z-[1]" />
+      <div className="hidden lg:block absolute bottom-0 left-1/2 -translate-x-1/2 w-[80%] lg:max-w-6xl 2xl:w-[75vw] 2xl:max-w-none h-[14rem] 2xl:h-[14.59vw] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl z-[1]" />
 
     </section>
   )
