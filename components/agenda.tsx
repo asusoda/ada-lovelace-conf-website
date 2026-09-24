@@ -84,7 +84,7 @@ export function AgendaSection() {
 
           {/* Illustration placeholders */}
           {/* Spacer to push down illustrations */}
-          <div className="hidden lg:block h-20 xl:h-40 2xl:h-[10.42vw] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 pr-32 xl:pr-48 backdrop-blur-sm"></div>
+          <div className="hidden lg:block h-56 xl:h-40 2xl:h-[10.42vw] bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 pr-32 xl:pr-48 backdrop-blur-sm"></div>
 
           <div className="relative mt-8 2xl:mt-[2.08vw] hidden lg:block z-[2]">
           {/* Left figure - person sitting/reclining */}
