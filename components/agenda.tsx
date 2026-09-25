@@ -2,20 +2,20 @@ import Image from "next/image"
 
 export function AgendaSection() {
   const scheduleItems = [
-    { time: "10:30 AM", title: "Check-in" },
-    { time: "11:00 AM", title: "Kickoff and Speeches" },
-    { time: "11:15 AM", title: "Keynote Speaker" },
-    { time: "11:45 AM", title: "Cross-Sector Panel: Tech Careers Beyond the Classroom" },
-    { time: "12:45 PM", title: "Networking Lunch @ Cochise" },
-    { time: "2:00 PM", title: "Building Tech Systems to Solve Business & Societal Problems" },
-    { time: "3:00 PM", title: "Resume Roast with Nationwide" },
-    { time: "3:45 PM", title: "How to Scale an API to 1M User Requests per Second" },
-    { time: "4:30 PM", title: "Closing Ceremony" },
+    { time: "10:30 – 11:00 AM", title: "Check-In" },
+    { time: "11:00 AM", title: "Opening Ceremony" },
+    { time: "11:15 AM", title: "Staying Ahead of the Future: Keynote & Fireside Chat with Susan Sly" },
+    { time: "11:45 AM", title: "Cross-Sector Panel: Tech Careers Beyond the Classroom (ft. PhDs, AMEX/NVIDIA interns, and entrepreneurs)" },
+    { time: "12:45 PM", title: "Networking Lunch (ft General Dynamics, Northrop Grumman, Nationwide, CVS, and more!)" },
+    { time: "2:00 PM", title: "Think Like a Researcher: Solving Problems That Matter" },
+    { time: "3:00 PM", title: "Nationwide Resume Roast and Soft Skills Workshop" },
+    { time: "4:00 PM", title: "Scaling Sustainable APIs with Hacker Devils" },
+    { time: "4:45 PM", title: "Closing Remarks" },
   ]
 
   return (
     <section id="agenda" className="bg-[var(--color-white)] py-6 sm:py-8 xl:py-30 2xl:py-[7.82vw] pb-[2rem] px-4 sm:px-6 xl:px-8 2xl:px-[2.08vw] relative overflow-hidden">
-      <div className="w-[80%] lg:max-w-6xl 2xl:w-[75vw] 2xl:max-w-none mx-auto">
+      <div className="w-full sm:w-[90%] lg:w-[80%] lg:max-w-6xl 2xl:w-[75vw] 2xl:max-w-none mx-auto">
         <div className="relative">
           {/* Date + location Header */}
           <div className="flex flex-col gap-3 lg:gap-0 lg:flex-row justify-between mb-6 2xl:mb-[1.56vw] pt-5 2xl:pt-[1.3vw]">
@@ -46,11 +46,11 @@ export function AgendaSection() {
 
           <div className="relative">
 
-            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-[2.6vw] pr-32 xl:pr-48 2xl:pr-[12.5vw] backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
+            <div className="bg-[var(--color-light-purple)] rounded-xl xl:rounded-2xl p-4 sm:p-6 xl:p-10 2xl:p-[2.6vw] lg:pr-12 xl:pr-16 2xl:pr-[4.17vw] backdrop-blur-sm font-lucidity text-[var(--color-blue)]">
               <div className="hidden lg:flex flex-col text-[clamp(1rem,1vw+0.25rem,2rem)] 2xl:text-[1.26vw] gap-3 xl:gap-4 2xl:gap-[1.04vw] px-5 lg:px-10 2xl:px-[2.6vw] pb-10 2xl:pb-[2.6vw] -ml-6 xl:-ml-10 2xl:-ml-[2.6vw]">
               {scheduleItems.map((item, index) => (
                 <div key={index} className="flex flex-row items-start gap-8 xl:gap-16 2xl:gap-[4.17vw]">
-                  <span className="font-bold w-[10rem] 2xl:w-[10.42vw] shrink-0 text-right">{item.time}</span>
+                  <span className="font-bold w-[12rem] 2xl:w-[12.5vw] shrink-0 text-right">{item.time}</span>
                   <span className="font-bold flex-1 text-left break-words">{item.title}</span>
                 </div>
               ))}
@@ -64,8 +64,8 @@ export function AgendaSection() {
                     key={index}
                     className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4 xl:gap-6 py-1 sm:py-2"
                   >
-                    <span className="text-[0.5rem] sm:text-lg xl:text-xl 2xl:text-2xl font-bold sm:min-w-[100px] xl:min-w-[120px] 2xl:min-w-[140px]">{item.time}</span>
-                    <span className="text-[0.5rem] sm:text-base xl:text-lg 2xl:text-xl font-medium uppercase tracking-wide">{item.title}</span>
+                    <span className="text-sm sm:text-lg xl:text-xl 2xl:text-2xl font-bold sm:w-[170px] sm:shrink-0 xl:min-w-[120px] 2xl:min-w-[140px]">{item.time}</span>
+                    <span className="text-sm sm:text-base xl:text-lg 2xl:text-xl font-medium uppercase tracking-wide">{item.title}</span>
                   </div>
                 ))}
               </div>
